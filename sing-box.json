@@ -9,12 +9,12 @@
       {
         "tag": "google",
         "address": "https://8.8.8.8/dns-query",
-        "detour": "proxy"
+        "detour": "🚀 节点选择"
       },
       {
         "tag": "aliyun",
         "address": "https://dns.alidns.com/dns-query",
-        "detour": "direct"
+        "detour": "🎯 全球直连"
       },
       {
         "tag": "fakeip",
@@ -28,7 +28,7 @@
         "disable_cache": true
       },
       {
-        "clash_mode": "Direct",
+        "clash_mode": "🎯 全球直连",
         "server": "aliyun"
       },
       {
@@ -60,11 +60,11 @@
       },
       {
         "ip_is_private": true,
-        "outbound": "direct"
+        "outbound": "🎯 全球直连"
       },
       {
-        "clash_mode": "Direct",
-        "outbound": "direct"
+        "clash_mode": "🎯 全球直连",
+        "outbound": "🎯 全球直连"
       },
       {
         "clash_mode": "Global",
@@ -123,7 +123,7 @@
       },
       {
         "rule_set": "geolocation-!cn",
-        "outbound": "proxy"
+        "outbound": "🚀 节点选择"
       },
       {
         "inbound": [
@@ -139,373 +139,373 @@
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/apple.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geosite-apple",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/apple.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "bahamut",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/bahamut.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "bilibili",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/bilibili.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geoip-google",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/google.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geosite-google",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/google.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geolocation-!cn",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geoip-netflix",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/netflix.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/netflix.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "openai",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/telegram.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "geosite-telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/telegram.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       },
       {
         "tag": "youtube",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/youtube.srs",
-        "download_detour": "direct"
+        "download_detour": "🎯 全球直连"
       }
     ],
     "final": "final",
-    "auto_detect_interface": true
+    "Auto_detect_interface": true
   },
   "outbounds": [
     {
-      "tag": "proxy",
+      "tag": "🚀 节点选择",
       "type": "selector",
       "outbounds": [
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto",
-        "direct"
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto",
+        "🎯 全球直连"
       ],
-      "default": "all-auto"
+      "default": "All-Auto"
     },
     {
       "tag": "google",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "proxy"
+      "default": "🚀 节点选择"
     },
     {
       "tag": "apple",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "direct"
+      "default": "🎯 全球直连"
     },
     {
       "tag": "telegram",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "proxy"
+      "default": "🚀 节点选择"
     },
     {
       "tag": "bilibili",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "direct"
+      "default": "🎯 全球直连"
     },
     {
       "tag": "netflix",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "proxy"
+      "default": "🚀 节点选择"
     },
     {
       "tag": "bahamut",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "proxy"
+      "default": "🚀 节点选择"
     },
     {
       "tag": "youtube",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "proxy"
+      "default": "🚀 节点选择"
     },
     {
       "tag": "openai",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "proxy"
+      "default": "🚀 节点选择"
     },
     {
       "tag": "cn",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "direct"
+      "default": "🎯 全球直连"
     },
     {
       "tag": "final",
       "type": "selector",
       "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🚀 节点选择",
+        "🎯 全球直连",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "proxy"
+      "default": "🚀 节点选择"
     },
     {
-      "tag": "hk",
+      "tag": "🇭🇰HK",
       "type": "selector",
       "outbounds": []
     },
     {
-      "tag": "tw",
+      "tag": "🇨🇳TW",
       "type": "selector",
       "outbounds": []
     },
     {
-      "tag": "jp",
+      "tag": "🇯🇵JP",
       "type": "selector",
       "outbounds": []
     },
     {
-      "tag": "sg",
+      "tag": "🇸🇬SG",
       "type": "selector",
       "outbounds": []
     },
     {
-      "tag": "us",
+      "tag": "🇺🇸US",
       "type": "selector",
       "outbounds": []
     },
     {
-      "tag": "all",
+      "tag": "All",
       "type": "selector",
       "outbounds": []
     },
     {
-      "tag": "hk-auto",
+      "tag": "🇭🇰HK-Auto",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
@@ -513,7 +513,7 @@
       "tolerance": 50
     },
     {
-      "tag": "tw-auto",
+      "tag": "🇨🇳TW-Auto",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
@@ -521,7 +521,7 @@
       "tolerance": 50
     },
     {
-      "tag": "jp-auto",
+      "tag": "🇯🇵JP-Auto",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
@@ -529,7 +529,7 @@
       "tolerance": 50
     },
     {
-      "tag": "sg-auto",
+      "tag": "🇸🇬SG-Auto",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
@@ -537,7 +537,7 @@
       "tolerance": 50
     },
     {
-      "tag": "us-auto",
+      "tag": "🇺🇸US-Auto",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
@@ -545,7 +545,7 @@
       "tolerance": 50
     },
     {
-      "tag": "all-auto",
+      "tag": "All-Auto",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
@@ -556,26 +556,26 @@
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
-        "direct",
-        "proxy",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "🎯 全球直连",
+        "🚀 节点选择",
+        "🇭🇰HK",
+        "🇭🇰HK-Auto",
+        "🇨🇳TW",
+        "🇨🇳TW-Auto",
+        "🇯🇵JP",
+        "🇯🇵JP-Auto",
+        "🇸🇬SG",
+        "🇸🇬SG-Auto",
+        "🇺🇸US",
+        "🇺🇸US-Auto",
+        "All",
+        "All-Auto"
       ],
-      "default": "direct"
+      "default": "🎯 全球直连"
     },
     {
-      "tag": "direct",
-      "type": "direct"
+      "tag": "🎯 全球直连",
+      "type": "🎯 全球直连"
     },
     {
       "tag": "dns-out",
@@ -594,11 +594,13 @@
       "type": "tun",
       "inet4_address": "172.19.0.0/30",
       "inet6_address": "fdfe:dcba:9876::0/126",
-      "stack": "system",
-      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "mixed"，     
+      "Auto_route": true,
       "sniff": true,
       "platform": {
-        "http_proxy": {
+        "http_🚀 节点选择": {
           "enabled": true,
           "server": "127.0.0.1",
           "server_port": 7890
@@ -610,7 +612,11 @@
       "type": "mixed",
       "listen": "127.0.0.1",
       "listen_port": 7890,
-      "sniff": true
+      "sniff": true,
+      "sniff_override_destination": false,
+      "tcp_fast_open": true,
+      "tcp_multi_path": true,
+      "udp_fragment": true
     },
     {
       "tag": "loop-in",
@@ -626,7 +632,7 @@
       "external_controller": "127.0.0.1:9090",
       "external_ui": "ui",
       "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "proxy"
+      "external_ui_download_detour": "🚀 节点选择"
     },
     "cache_file": {
       "enabled": true,
