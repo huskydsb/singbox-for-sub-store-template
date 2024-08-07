@@ -170,77 +170,39 @@
       ]
     },
     {
+      "tag": "🐟 漏网之鱼",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "tag": "📈 网络测试",
+      "type": "selector",
+      "outbounds": [
+        "🎯 全球直连",
+        "🇭🇰 香港节点",
+        "🇹🇼 台湾节点",
+        "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
+      ]
+    },
+    {
       "tag": "🤖 人工智能",
       "type": "selector",
       "outbounds": [
-        "🎈 自动选择",
         "🚀 节点选择",
-        "🇺🇸美国自动",
-        "🇰🇷韩国自动",
-        "🇸🇬狮城自动",
-        "🇯🇵日本自动",
-        "🇹🇼台湾自动",
-        "🇭🇰香港自动"
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
       ]
     },
     {
-      "tag": "📲 电报消息",
-      "type": "selector",
-      "outbounds": [
-        "🚀 节点选择"
-      ]
-    },
-    {
-      "tag": "📹 油管视频",
-      "type": "selector",
-      "outbounds": [
-        "🚀 节点选择"
-      ]
-    },
-    {
-      "tag": "🎵 TikTok",
-      "type": "selector",
-      "outbounds": [
-        "🚀 节点选择"
-      ]
-    },
-    {
-      "tag": "📺 哔哩哔哩",
-      "type": "selector",
-      "outbounds": [
-        "🚀 节点选择"
-      ]
-    },
-    {
-      "tag": "🎥 奈飞视频",
-      "type": "selector",
-      "outbounds": [
-        "🚀 节点选择"
-      ]
-    },
-    {
-      "tag": "📽️ 迪士尼+",
-      "type": "selector",
-      "outbounds": [
-        "🚀 节点选择"
-      ]
-    },
-    {
-      "tag": "🍎 Apple TV+",
-      "type": "selector",
-      "outbounds": [
-        "🚀 节点选择"
-      ]
-    },
-    {
-      "tag": "🍎 苹果服务",
-      "type": "selector",
-      "outbounds": [
-        "🚀 节点选择"
-      ]
-    },
-    {
-      "tag": "🇬 谷歌服务",
+      "tag": "🎮 游戏服务",
       "type": "selector",
       "outbounds": [
         "🎯 全球直连",
@@ -256,7 +218,7 @@
       ]
     },
     {
-      "tag": "🎮 游戏服务",
+      "tag": "🇬 谷歌服务",
       "type": "selector",
       "outbounds": [
         "🎯 全球直连",
@@ -264,295 +226,269 @@
       ]
     },
     {
-      "tag": "🎯 全球直连",
+      "tag": "🍎 苹果服务",
       "type": "selector",
       "outbounds": [
-        "direct",
-        "block"
+        "🎯 全球直连",
+        "🚀 节点选择"
       ]
     },
     {
-      "tag": "🛑 全球拦截",
-      "type": "selector",
-      "outbounds": [
-        "block",
-        "direct"
-      ]
-    },
-    {
-      "tag": "🐟 漏网之鱼",
+      "tag": "🎥 奈飞视频",
       "type": "selector",
       "outbounds": [
         "🚀 节点选择",
-        "🎯 全球直连",
-        "🎈 自动选择",
-        "direct"
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点"
       ]
+    },
+    {
+      "tag": "📽️ 迪士尼+",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点"
+      ]
+    },
+    {
+      "tag": "🎞️ Max",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点"
+      ]
+    },
+    {
+      "tag": "🎬 Prime Video",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点"
+      ]
+    },
+    {
+      "tag": "🍎 Apple TV+",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点"
+      ]
+    },
+    {
+      "tag": "📹 油管视频",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点"
+      ]
+    },
+    {
+      "tag": "🎵 TikTok",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点"
+      ]
+    },
+    {
+      "tag": "📺 哔哩哔哩",
+      "type": "selector",
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择",
+        "🇭🇰 香港节点",
+        "🇯🇵 日本节点",
+        "🇸🇬 新加坡节点"
+      ]
+    },
+    {
+      "tag": "🇨🇳 直连域名",
+      "type": "selector",
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ]
+    },
+    {
+      "tag": "🇨🇳 直连 IP",
+      "type": "selector",
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ]
+    },
+    {
+      "tag": "🪜 代理域名",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择",
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "tag": "📲 电报消息",
+      "type": "selector",
+      "outbounds": [
+        "🚀 节点选择"
+      ]
+    },
+    {
+      "tag": "🖥️ 直连软件",
+      "type": "selector",
+      "outbounds": [
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "tag": "🔒 私有网络",
+      "type": "selector",
+      "outbounds": [
+        "🎯 全球直连"
+      ]
+    },
+    {
+      "tag": "🛑 广告拦截",
+      "type": "selector",
+      "outbounds": [
+        "REJECT"
+      ]
+    },
+    {
+      "tag": "🎯 全球直连",
+      "type": "selector",
+      "outbounds": [
+        "DIRECT"
+      ]
+    },
+    {
+      "tag": "REJECT",
+      "type": "block"
+    },
+    {
+      "tag": "DIRECT",
+      "type": "direct"
     },
     {
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
-        "direct",
-        "block",
-        "🚀 节点选择",
-        "🎯 全球直连",
-        "🛑 全球拦截",
-        "🐟 漏网之鱼"
+        "DIRECT",
+        "REJECT",
+        "🇭🇰 香港节点",
+        "🇹🇼 台湾节点",
+        "🇯🇵 日本节点",
+        "🇰🇷 韩国节点",
+        "🇸🇬 新加坡节点",
+        "🇺🇸 美国节点"
       ]
-    },
-    {
-      "type": "direct",
-      "tag": "direct"
-    },
-    {
-      "type": "dns",
-      "tag": "dns-out"
-    },
-    {
-      "type": "block",
-      "tag": "block"
     }
   ],
   "route": {
-    "rule_set": [
-      {
-        "tag": "🇬 谷歌服务",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "akeip-filter",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/fakeip-filter.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🍎 苹果服务",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🍎 Apple TV+",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/appletv.sru",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "📺 哔哩哔哩",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bilibili.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🛑 全球拦截",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🇨🇳 直连 IP",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🇨🇳 直连域名",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "📽️ 迪士尼+",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🎥 奈飞视频",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🪟 微软服务",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/microsoft-cn.sru",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🎵 TikTok",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🤖 人工智能",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "🎮 游戏服务",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/games-cn.sru",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "📲 电报消息",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "GEOIP-CN",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "GEOSITE-CN",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "GEOLOCATION-!CN",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "direct"
-      }
-    ],
     "rules": [
       {
-        "rule_set": "🇬 谷歌服务",
-        "outbound": "🇬 谷歌服务"
+        "rule_set": ["ads"],
+        "outbound": "🛑 广告拦截"
       },
       {
-        "rule_set": "🇬 谷歌服务",
-        "outbound": "🇬 谷歌服务"
+        "rule_set": ["applications"],
+        "outbound": "🖥️ 直连软件"
       },
       {
-        "rule_set": "akeip-filter",
-        "outbound": "🚀 节点选择"
+        "rule_set": ["private"],
+        "outbound": "🔒 私有网络"
       },
       {
-        "rule_set": "🍎 苹果服务",
-        "outbound": "🍎 苹果服务"
-      },
-      {
-        "rule_set": "🍎 Apple TV+",
-        "outbound": "🍎 Apple TV+"
-      },
-      {
-        "rule_set": "📺 哔哩哔哩",
-        "outbound": "📺 哔哩哔哩"
-      },
-      {
-        "rule_set": "📺 哔哩哔哩",
-        "outbound": "📺 哔哩哔哩"
-      },
-      {
-        "rule_set": "🛑 全球拦截",
-        "outbound": "🛑 全球拦截"
-      },
-      {
-        "rule_set": "🇨🇳 直连 IP",
-        "outbound": "🎯 全球直连"
-      },
-      {
-        "rule_set": "🇨🇳 直连域名",
-        "outbound": "🎯 全球直连"
-      },
-      {
-        "rule_set": "📽️ 迪士尼+",
-        "outbound": "📽️ 迪士尼+"
-      },
-      {
-        "rule_set": "🎥 奈飞视频",
-        "outbound": "🎥 奈飞视频"
-      },
-      {
-        "rule_set": "🎥 奈飞视频",
-        "outbound": "🎥 奈飞视频"
-      },
-      {
-        "rule_set": "🪟 微软服务",
+        "rule_set": ["microsoft-cn"],
         "outbound": "🪟 微软服务"
       },
       {
-        "rule_set": "🎵 TikTok",
-        "outbound": "🎵 TikTok"
+        "rule_set": ["apple-cn"],
+        "outbound": "🍎 苹果服务"
       },
       {
-        "rule_set": "🤖 人工智能",
-        "outbound": "🤖 人工智能"
+        "rule_set": ["google-cn"],
+        "outbound": "🇬 谷歌服务"
       },
       {
-        "rule_set": "🎮 游戏服务",
+        "rule_set": ["games-cn"],
         "outbound": "🎮 游戏服务"
       },
       {
-        "rule_set": "📲 电报消息",
+        "rule_set": ["netflix"],
+        "outbound": "🎥 奈飞视频"
+      },
+      {
+        "rule_set": ["disney"],
+        "outbound": "📽️ 迪士尼+"
+      },
+      {
+        "rule_set": ["max"],
+        "outbound": "🎞️ Max"
+      },
+      {
+        "rule_set": ["primevideo"],
+        "outbound": "🎬 Prime Video"
+      },
+      {
+        "rule_set": ["appletv"],
+        "outbound": "🍎 Apple TV+"
+      },
+      {
+        "rule_set": ["youtube"],
+        "outbound": "📹 油管视频"
+      },
+      {
+        "rule_set": ["tiktok"],
+        "outbound": "🎵 TikTok"
+      },
+      {
+        "rule_set": ["bilibili"],
+        "outbound": "📺 哔哩哔哩"
+      },
+      {
+        "rule_set": ["ai"],
+        "outbound": "🤖 人工智能"
+      },
+      {
+        "rule_set": ["networktest"],
+        "outbound": "📈 网络测试"
+      },
+      {
+        "rule_set": ["proxy"],
+        "outbound": "🪜 代理域名"
+      },
+      {
+        "rule_set": ["cn"],
+        "outbound": "🇨🇳 直连域名"
+      },
+      {
+        "rule_set": ["cn-ip"],
+        "outbound": "🇨🇳 直连 IP"
+      },
+      {
+        "rule_set": ["telegram"],
         "outbound": "📲 电报消息"
       },
       {
-        "rule_set": "📲 电报消息",
-        "outbound": "📲 电报消息"
-      },
-      {
-        "protocol": "dns",
-        "port": 53,
-        "outbound": "dns-out"
-      },
-      {
-        "clash_mode": "direct",
-        "outbound": "direct"
-      },
-      {
-        "clash_mode": "global",
+        "rule_set": ["global"],
         "outbound": "GLOBAL"
       },
       {
-        "network": "udp",
-        "port": 443,
-        "outbound": "🛑 全球拦截"
-      },
-      {
-        "ip_is_private": true,
-        "outbound": "🎯 全球直连"
-      },
-      {
-        "rule_set": "GEOIP-CN",
-        "outbound": "🎯 全球直连"
-      },
-      {
-        "rule_set": "GEOSITE-CN",
-        "outbound": "🎯 全球直连"
-      },
-      {
-        "rule_set": "GEOLOCATION-!CN",
-        "outbound": "🚀 节点选择"
+        "rule_set": ["catch-all"],
+        "outbound": "🐟 漏网之鱼"
       }
     ],
     "final": "🐟 漏网之鱼",
