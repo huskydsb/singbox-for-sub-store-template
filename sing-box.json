@@ -1,20 +1,103 @@
 {
   "log": {
+    "disabled": false,
     "level": "info",
     "timestamp": true
   },
-  "experimental": {
-    "clash_api": {
-      "external_controller": "127.0.0.1:9090",
-      "external_ui": "ui",
-      "secret": "",
-      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-      "default_mode": "rule"
-    },
-    "cache_file": {
+  "dns": {
+    "servers": [
+      {
+        "tag": "remote-dns",
+        "address": "https://dns.google/dns-query",
+        "address_resolver": "remote-resolver-dns",
+        "detour": "🚀节点选择"
+      },
+      {
+        "tag": "local-dns",
+        "address": "https://dns.alidns.com/dns-query",
+        "address_resolver": "resolver-dns",
+        "detour": "🎯全球直连"
+      },
+      {
+        "tag": "resolver-dns",
+        "address": "223.5.5.5",
+        "detour": "🎯全球直连"
+      },
+      {
+        "tag": "remote-resolver-dns",
+        "address": "8.8.8.8",
+        "detour": "🚀节点选择"
+      },
+      {
+        "tag": "fakeip-dns",
+        "address": "fakeip"
+      },
+      {
+        "tag": "block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "disable_cache": true,
+        "server": "local-dns"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "domain_suffix": [
+              ".lan",
+              ".localdomain",
+              ".example",
+              ".invalid",
+              ".localhost",
+              ".test",
+              ".local",
+              ".home.arpa",
+              ".msftconnecttest.com",
+              ".msftncsi.com"
+            ],
+            "invert": true
+          },
+          {
+            "query_type": [
+              "A",
+              "AAAA"
+            ]
+          }
+        ],
+        "server": "fakeip-dns"
+      },
+      {
+        "clash_mode": "direct",
+        "server": "local-dns"
+      },
+      {
+        "clash_mode": "global",
+        "server": "remote-dns"
+      },
+      {
+        "rule_set": "GEOSITE-CN",
+        "server": "local-dns"
+      },
+      {
+        "rule_set": "GEOLOCATION-!CN",
+        "server": "remote-dns"
+      }
+    ],
+    "final": "remote-dns",
+    "strategy": "prefer_ipv4",
+    "disable_cache": true,
+    "disable_expire": false,
+    "independent_cache": false,
+    "reverse_mapping": false,
+    "fakeip": {
       "enabled": true,
-      "store_fakeip": true,
-      "store_rdrc": false
+      "inet4_range": "198.18.0.1/16",
+      "inet6_range": "fc00::/18"
     }
   },
   "inbounds": [
@@ -150,7 +233,7 @@
       ]
     },
     {
-      "tag": "📈 网络测试",
+      "tag": "📈网络测试",
       "type": "selector",
       "outbounds": [
         "🎯全球直连",
@@ -158,7 +241,7 @@
       ]
     },
     {
-      "tag": "🤖 人工智能",
+      "tag": "🤖人工智能",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -178,28 +261,7 @@
       ]
     },
     {
-      "tag": "🎮 游戏服务",
-      "type": "selector",
-      "outbounds": [
-        "🚀节点选择",
-        "🎈自动选择",
-        "🎯全球直连",
-        "🇭🇰香港手动",
-        "🇭🇰香港自动",
-        "🇹🇼台湾手动",
-        "🇹🇼台湾自动",
-        "🇯🇵日本手动",
-        "🇯🇵日本自动",
-        "🇰🇷韩国手动",
-        "🇰🇷韩国自动",
-        "🇸🇬狮城手动",
-        "🇸🇬狮城自动",
-        "🇺🇸美国手动",
-        "🇺🇸美国自动"
-      ]
-    },
-    {
-      "tag": "🪟 微软服务",
+      "tag": "🎮游戏服务",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -220,7 +282,7 @@
       ]
     },
     {
-      "tag": "🇬 谷歌服务",
+      "tag": "🪟微软服务",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -241,7 +303,28 @@
       ]
     },
     {
-      "tag": "🍎 苹果服务",
+      "tag": "🇬谷歌服务",
+      "type": "selector",
+      "outbounds": [
+        "🚀节点选择",
+        "🎈自动选择",
+        "🎯全球直连",
+        "🇭🇰香港手动",
+        "🇭🇰香港自动",
+        "🇹🇼台湾手动",
+        "🇹🇼台湾自动",
+        "🇯🇵日本手动",
+        "🇯🇵日本自动",
+        "🇰🇷韩国手动",
+        "🇰🇷韩国自动",
+        "🇸🇬狮城手动",
+        "🇸🇬狮城自动",
+        "🇺🇸美国手动",
+        "🇺🇸美国自动"
+      ]
+    },
+    {
+      "tag": "🍎苹果服务",
       "type": "selector",
       "outbounds": [
         "🎯全球直连",
@@ -262,7 +345,7 @@
       ]
     },
     {
-      "tag": "🎥 奈飞视频",
+      "tag": "🎥奈飞视频",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -282,7 +365,7 @@
       ]
     },
     {
-      "tag": "📽️ 迪士尼+",
+      "tag": "📽️迪士尼+",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -302,7 +385,7 @@
       ]
     },
     {
-      "tag": "🎞️ Max",
+      "tag": "🎞️Max",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -322,7 +405,7 @@
       ]
     },
     {
-      "tag": "🎬 Prime Video",
+      "tag": "🎬Prime Video",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -342,7 +425,7 @@
       ]
     },
     {
-      "tag": "🍎 Apple TV+",
+      "tag": "🍎Apple TV+",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -362,7 +445,7 @@
       ]
     },
     {
-      "tag": "📹 油管视频",
+      "tag": "📹油管视频",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -382,7 +465,7 @@
       ]
     },
     {
-      "tag": "🎵 TikTok",
+      "tag": "🎵TikTok",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -402,7 +485,7 @@
       ]
     },
     {
-      "tag": "📺 哔哩哔哩",
+      "tag": "📺哔哩哔哩",
       "type": "selector",
       "outbounds": [
         "🎯全球直连",
@@ -423,15 +506,7 @@
       ]
     },
     {
-      "tag": "🇨🇳 直连域名",
-      "type": "selector",
-      "outbounds": [
-        "🎯全球直连",
-        "🚀节点选择"
-      ]
-    },
-    {
-      "tag": "🇨🇳 直连 IP",
+      "tag": "🇨🇳直连域名",
       "type": "selector",
       "outbounds": [
         "🎯全球直连",
@@ -439,7 +514,15 @@
       ]
     },
     {
-      "tag": "🪜 代理域名",
+      "tag": "🇨🇳直连 IP",
+      "type": "selector",
+      "outbounds": [
+        "🎯全球直连",
+        "🚀节点选择"
+      ]
+    },
+    {
+      "tag": "🪜代理域名",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -460,7 +543,7 @@
       ]
     },
     {
-      "tag": "📲 电报消息",
+      "tag": "📲电报消息",
       "type": "selector",
       "outbounds": [
         "🚀节点选择",
@@ -480,21 +563,21 @@
       ]
     },
     {
-      "tag": "🖥️ 直连软件",
+      "tag": "🖥️直连软件",
       "type": "selector",
       "outbounds": [
         "🎯全球直连"
       ]
     },
     {
-      "tag": "🔒 私有网络",
+      "tag": "🔒私有网络",
       "type": "selector",
       "outbounds": [
         "🎯全球直连"
       ]
     },
     {
-      "tag": "🛑 广告拦截",
+      "tag": "🛑广告拦截",
       "type": "selector",
       "outbounds": [
         "REJECT"
@@ -544,142 +627,142 @@
         "rule_set": [
           "ads"
         ],
-        "outbound": "🛑 广告拦截"
+        "outbound": "🛑广告拦截"
       },
       {
         "rule_set": [
           "applications"
         ],
-        "outbound": "🖥️ 直连软件"
+        "outbound": "🖥️直连软件"
       },
       {
         "rule_set": [
           "private"
         ],
-        "outbound": "🔒 私有网络"
+        "outbound": "🔒私有网络"
       },
       {
         "rule_set": [
           "microsoft-cn"
         ],
-        "outbound": "🪟 微软服务"
+        "outbound": "🪟微软服务"
       },
       {
         "rule_set": [
           "apple-cn"
         ],
-        "outbound": "🍎 苹果服务"
+        "outbound": "🍎苹果服务"
       },
       {
         "rule_set": [
           "google-cn"
         ],
-        "outbound": "🇬 谷歌服务"
+        "outbound": "🇬谷歌服务"
       },
       {
         "rule_set": [
           "games-cn"
         ],
-        "outbound": "🎮 游戏服务"
+        "outbound": "🎮游戏服务"
       },
       {
         "rule_set": [
           "netflix"
         ],
-        "outbound": "🎥 奈飞视频"
+        "outbound": "🎥奈飞视频"
       },
       {
         "rule_set": [
           "disney"
         ],
-        "outbound": "📽️ 迪士尼+"
+        "outbound": "📽️迪士尼+"
       },
       {
         "rule_set": [
           "max"
         ],
-        "outbound": "🎞️ Max"
+        "outbound": "🎞️Max"
       },
       {
         "rule_set": [
           "primevideo"
         ],
-        "outbound": "🎬 Prime Video"
+        "outbound": "🎬Prime Video"
       },
       {
         "rule_set": [
           "appletv"
         ],
-        "outbound": "🍎 Apple TV+"
+        "outbound": "🍎Apple TV+"
       },
       {
         "rule_set": [
           "youtube"
         ],
-        "outbound": "📹 油管视频"
+        "outbound": "📹油管视频"
       },
       {
         "rule_set": [
           "tiktok"
         ],
-        "outbound": "🎵 TikTok"
+        "outbound": "🎵TikTok"
       },
       {
         "rule_set": [
           "bilibili"
         ],
-        "outbound": "📺 哔哩哔哩"
+        "outbound": "📺哔哩哔哩"
       },
       {
         "rule_set": [
           "ai"
         ],
-        "outbound": "🤖 人工智能"
+        "outbound": "🤖人工智能"
       },
       {
         "rule_set": [
           "networktest"
         ],
-        "outbound": "📈 网络测试"
+        "outbound": "📈网络测试"
       },
       {
         "rule_set": [
           "proxy"
         ],
-        "outbound": "🪜 代理域名"
+        "outbound": "🪜代理域名"
       },
       {
         "rule_set": [
           "cn"
         ],
-        "outbound": "🇨🇳 直连域名"
+        "outbound": "🇨🇳直连域名"
       },
       {
         "rule_set": [
           "netflixip"
         ],
-        "outbound": "🎥 奈飞视频",
+        "outbound": "🎥奈飞视频",
         "skip_resolve": true
       },
       {
         "rule_set": [
           "telegramip"
         ],
-        "outbound": "📲 电报消息",
+        "outbound": "📲电报消息",
         "skip_resolve": true
       },
       {
         "rule_set": [
           "privateip"
         ],
-        "outbound": "🔒 私有网络",
+        "outbound": "🔒私有网络",
         "skip_resolve": true
       },
       {
         "rule_set": [
           "cnip"
         ],
-        "outbound": "🇨🇳 直连 IP"
+        "outbound": "🇨🇳直连 IP"
       }
     ],
     "rule_set": [
@@ -841,98 +924,18 @@
       }
     ]
   },
-  "dns": {
-    "servers": [
-      {
-        "tag": "remote-dns",
-        "address": "https://dns.google/dns-query",
-        "address_resolver": "remote-resolver-dns",
-        "detour": "🚀节点选择"
-      },
-      {
-        "tag": "local-dns",
-        "address": "https://dns.alidns.com/dns-query",
-        "address_resolver": "resolver-dns",
-        "detour": "🎯全球直连"
-      },
-      {
-        "tag": "resolver-dns",
-        "address": "223.5.5.5",
-        "detour": "🎯全球直连"
-      },
-      {
-        "tag": "remote-resolver-dns",
-        "address": "8.8.8.8",
-        "detour": "🚀节点选择"
-      },
-      {
-        "tag": "fakeip-dns",
-        "address": "fakeip"
-      },
-      {
-        "tag": "block",
-        "address": "rcode://success"
-      }
-    ],
-    "disable_cache": true,
-    "disable_expire": false,
-    "independent_cache": false,
-    "rules": [
-      {
-        "outbound": "any",
-        "disable_cache": true,
-        "server": "local-dns"
-      },
-      {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "domain_suffix": [
-              ".lan",
-              ".localdomain",
-              ".example",
-              ".invalid",
-              ".localhost",
-              ".test",
-              ".local",
-              ".home.arpa",
-              ".msftconnecttest.com",
-              ".msftncsi.com"
-            ],
-            "invert": true
-          },
-          {
-            "query_type": [
-              "A",
-              "AAAA"
-            ]
-          }
-        ],
-        "server": "fakeip-dns"
-      },
-      {
-        "clash_mode": "direct",
-        "server": "local-dns"
-      },
-      {
-        "clash_mode": "global",
-        "server": "remote-dns"
-      },
-      {
-        "rule_set": "GEOSITE-CN",
-        "server": "local-dns"
-      },
-      {
-        "rule_set": "GEOLOCATION-!CN",
-        "server": "remote-dns"
-      }
-    ],
-    "fakeip": {
-      "enabled": true,
-      "inet4_range": "198.18.0.1/16",
-      "inet6_range": "fc00::/18"
+  "experimental": {
+    "clash_api": {
+      "external_controller": "127.0.0.1:9090",
+      "external_ui": "ui",
+      "secret": "",
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "default_mode": "rule"
     },
-    "final": "remote-dns"
+    "cache_file": {
+      "enabled": true,
+      "store_fakeip": true,
+      "store_rdrc": false
+    }
   }
 }
