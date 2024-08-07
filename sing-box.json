@@ -54,14 +54,12 @@
       "tag": "🚀 节点选择",
       "type": "selector",
       "outbounds": [
-        "direct"
       ]
     },
     {
       "tag": "🎈 自动选择",
       "type": "urltest",
       "outbounds": [
-        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
@@ -71,7 +69,6 @@
       "tag": "🇺🇸美国自动",
       "type": "urltest",
       "outbounds": [
-        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
@@ -81,14 +78,12 @@
       "tag": "🇺🇸美国手动",
       "type": "selector",
       "outbounds": [
-        "direct"
       ]
     },
     {
       "tag": "🇯🇵日本自动",
       "type": "urltest",
       "outbounds": [
-        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
@@ -98,14 +93,12 @@
       "tag": "🇯🇵日本手动",
       "type": "selector",
       "outbounds": [
-        "direct"
       ]
     },
     {
       "tag": "🇰🇷韩国自动",
       "type": "urltest",
       "outbounds": [
-        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
@@ -115,14 +108,12 @@
       "tag": " 🇰🇷韩国手动",
       "type": "selector",
       "outbounds": [
-        "direct"
       ]
     },
     {
       "tag": "🇸🇬狮城自动",
       "type": "urltest",
       "outbounds": [
-        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
@@ -132,14 +123,12 @@
       "tag": "🇸🇬狮城手动",
       "type": "selector",
       "outbounds": [
-        "direct"
       ]
     },
     {
       "tag": "🇭🇰香港自动",
       "type": "urltest",
       "outbounds": [
-        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
@@ -149,14 +138,12 @@
       "tag": "🇭🇰香港手动",
       "type": "selector",
       "outbounds": [
-        "direct"
       ]
     },
     {
       "tag": "🇹🇼台湾自动",
       "type": "urltest",
       "outbounds": [
-        "direct"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "300s",
@@ -166,7 +153,6 @@
       "tag": "🇹🇼台湾手动",
       "type": "selector",
       "outbounds": [
-        "direct"
       ]
     },
     {
