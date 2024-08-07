@@ -4,7 +4,7 @@ const compatible_outbound = {
   type: 'direct',
 }
 
-let compatible
+let compatible = false
 let config = JSON.parse($files[0])
 let proxies = await produceArtifact({
   name,
@@ -15,7 +15,7 @@ let proxies = await produceArtifact({
 
 config.outbounds.push(...proxies)
 
-config.outbounds.map(i => {
+config.outbounds.forEach(i => {
   if (['🚀节点选择', '🎈自动选择'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies))
   }
@@ -29,13 +29,13 @@ config.outbounds.map(i => {
     i.outbounds.push(...getTags(proxies, /Japan|日本|Hokkaido|北海道|Aomori|青森|Iwate|岩手|Miyagi|宫城|Akita|秋田|Yamagata|山形|Fukushima|福岛|Ibaraki|茨城|Tochigi|枥木|Gunma|群马|Saitama|埼玉|Chiba|千叶|Tokyo|东京|Kanagawa|神奈川|Niigata|新潟|Toyama|富山|Ishikawa|石川|Fukui|福井|Yamanashi|山梨|Nagano|长野|Gifu|岐阜|Shizuoka|静冈|Aichi|爱知|Mie|三重|Shiga|滋贺|Kyoto|京都|Osaka|大阪|Hyogo|兵库|Nara|奈良|Wakayama|和歌山|Tottori|鸟取|Shimane|岛根|Okayama|冈山|Hiroshima|广岛|Yamaguchi|山口|Tokushima|德岛|Kagawa|香川|Ehime|爱媛|Kochi|高知|Fukuoka|福冈|Saga|佐贺|Nagasaki|长崎|Kumamoto|熊本|Oita|大分|Miyazaki|宫崎|Kagoshima|鹿儿岛|Okinawa|冲绳|Sapporo|札幌|Sendai|仙台|Yokohama|横滨|Nagoya|名古屋|Kobe|神户|Hiroshima|广岛|Fukuoka|福冈|Kawasaki|川崎|Saitama|埼玉|Chiba|千叶|Kitakyushu|北九州|Sakai|堺市|Niigata|新潟|Hamamatsu|滨松|Shizuoka|静冈|Okayama|冈山|Kumamoto|熊本|Sagamihara|相模原|Hachioji|八王子|Himeji|姬路|Matsuyama|松山|Kanazawa|金泽|Nagasaki|长崎|Okinawa|冲绳|🇯🇵/i))
   }
   if (['🇸🇬狮城手动', '🇸🇬狮城自动'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^(?!.*(?:us)).*(Singapore|SG|新加坡|狮城|狮城岛|Lion City|Garden City|新加坡市|Singapore City|Bedok|贝多克|Bukit Batok|武吉巴督|Bukit Panjang|武吉班让|Choa Chu Kang|蔡厝港|Clementi|克兰芝|Downtown Core|市中心核心区|Jurong East|裕廊东|Jurong West|裕廊西|Kallang|加冷|Novena|诺维纳|Orchard|乌节|Pasir Ris|巴西瑞斯|Punggol|榜鹅|Sengkang|盛港|Tampines|淡滨尼|Toa Payoh|大巴窑|Woodlands|兀兰|Yishun|义顺|🇸🇬)/i))
+    i.outbounds.push(...getTags(proxies, /^(?!.*(?:us)).*(Singapore|SG|新加坡|狮城|狮城岛|Lion City|Garden City|新加坡市|Singapore City|Bedok|贝多克|Bukit Batok|武吉巴督|Bukit Panjang|武吉班让|Choa Chu Kang|蔡厝港|Clementi|克兰芝|Downtown Core|市中心核心区|Jurong East|裕廊东|Jurong West|裕廊西|Kallang|加冷|Novena|诺维纳|Orchard|乌节|Pasir Ris|巴西瑞斯|Punggol|榜鹅|Sengkang|盛港|Tampines|淡滨尼|Toa Payoh|大巴窑|Woodlands|兀兰|Yishun|义顺|🇸🇬/i))
   }
   if (['🇰🇷韩国手动', '🇰🇷韩国自动'].includes(i.tag)) {
-  i.outbounds.push(...getTags(proxies, /South Korea|Korea|KR|Republic of Korea|ROK|韩国|서울|Seoul|釜山|Busan|大邱|Daegu|仁川|Incheon|光州|Gwangju|大田|Daejeon|蔚山|Ulsan|水原|Suwon|昌原|Changwon|城南|Seongnam|高阳|Goyang|龙仁|Yongin|富川|Bucheon|安养|Anyang|天安|Cheonan|全州|Jeonju|春川|Chuncheon|清州|Cheongju|金海|Gimhae|光明|Gwangmyeong|金浦|Gimpo|牙山|Asan|原州|Wonju|蔚州|Uijeongbu|公州|Gongju|群山|Gunsan|南原|Namwon|宜宁|Eumseong|驪州|Yeoju|三陟|Samcheok|东海|Donghae|束草|Sokcho|济州|Jeju|🇰🇷/i))
+    i.outbounds.push(...getTags(proxies, /South Korea|Korea|KR|Republic of Korea|ROK|韩国|서울|Seoul|釜山|Busan|大邱|Daegu|仁川|Incheon|光州|Gwangju|大田|Daejeon|蔚山|Ulsan|水原|Suwon|昌原|Changwon|城南|Seongnam|高阳|Goyang|龙仁|Yongin|富川|Bucheon|安养|Anyang|天安|Cheonan|全州|Jeonju|春川|Chuncheon|清州|Cheongju|金海|Gimhae|光明|Gwangmyeong|金浦|Gimpo|牙山|Asan|原州|Wonju|蔚州|Uijeongbu|公州|Gongju|群山|Gunsan|南原|Namwon|宜宁|Eumseong|驪州|Yeoju|三陟|Samcheok|东海|Donghae|束草|Sokcho|济州|Jeju|🇰🇷/i))
   }
   if (['🇺🇸美国手动', '🇺🇸美国自动'].includes(i.tag)) {
-  i.outbounds.push(...getTags(proxies, /USA|United States|America|US|美国|阿拉巴马州|阿拉斯加州|亚利桑那州|阿肯色州|加利福尼亚州|科罗拉多州|康涅狄格州|特拉华州|佛罗里达州|乔治亚州|夏威夷州|爱达荷州|伊利诺伊州|印第安纳州|爱荷华州|堪萨斯州|肯塔基州|路易斯安那州|缅因州|马里兰州|马萨诸塞州|密歇根州|明尼苏达州|密西西比州|密苏里州|蒙大拿州|内布拉斯加州|内华达州|新罕布什尔州|新泽西州|新墨西哥州|纽约州|北卡罗来纳州|北达科他州|俄亥俄州|俄克拉荷马州|俄勒冈州|宾夕法尼亚州|罗得岛州|南卡罗来纳州|南达科他州|田纳西州|德克萨斯州|犹他州|佛蒙特州|弗吉尼亚州|华盛顿州|西弗吉尼亚州|威斯康星州|怀俄明州|New York City|纽约市|Los Angeles|洛杉矶|Chicago|芝加哥|Houston|休斯顿|Phoenix|菲尼克斯|Philadelphia|费城|San Antonio|圣安东尼奥|San Diego|圣迭戈|Dallas|达拉斯|San Jose|圣何塞|Austin|奥斯汀|Jacksonville|杰克逊维尔|Fort Worth|沃斯堡|Columbus|哥伦布|Charlotte|夏洛特|San Francisco|旧金山|Indianapolis|印第安纳波利斯|Seattle|西雅图|Denver|丹佛|Washington|华盛顿|Boston|波士顿|El Paso|埃尔帕索|Detroit|底特律|Nashville|纳什维尔|Portland|波特兰|Memphis|孟菲斯|Oklahoma City|俄克拉荷马城|Las Vegas|拉斯维加斯|Louisville|路易斯维尔|Baltimore|巴尔的摩|Milwaukee|密尔沃基|Albuquerque|阿尔伯克基|Tucson|图森|Fresno|弗雷斯诺|Sacramento|萨克拉门托|Kansas City|堪萨斯城|Long Beach|长滩|Mesa|梅萨|Atlanta|亚特兰大|Colorado Springs|科罗拉多斯普林斯|Virginia Beach|弗吉尼亚海滩|Raleigh|罗利|Omaha|奥马哈|Miami|迈阿密|Oakland|奥克兰|Minneapolis|明尼阿波利斯|Tulsa|塔尔萨|Wichita|威奇托|New Orleans|新奥尔良|🇺🇸/i))
+    i.outbounds.push(...getTags(proxies, /USA|United States|America|US|美国|阿拉巴马州|阿拉斯加州|亚利桑那州|阿肯色州|加利福尼亚州|科罗拉多州|康涅狄格州|特拉华州|佛罗里达州|乔治亚州|夏威夷州|爱达荷州|伊利诺伊州|印第安纳州|爱荷华州|堪萨斯州|肯塔基州|路易斯安那州|缅因州|马里兰州|马萨诸塞州|密歇根州|明尼苏达州|密西西比州|密苏里州|蒙大拿州|内布拉斯加州|内华达州|新罕布什尔州|新泽西州|新墨西哥州|纽约州|北卡罗来纳州|北达科他州|俄亥俄州|俄克拉荷马州|俄勒冈州|宾夕法尼亚州|罗得岛州|南卡罗来纳州|南达科他州|田纳西州|德克萨斯州|犹他州|佛蒙特州|弗吉尼亚州|华盛顿州|西弗吉尼亚州|威斯康星州|怀俄明州|New York City|纽约市|Los Angeles|洛杉矶|Chicago|芝加哥|Houston|休斯顿|Phoenix|菲尼克斯|Philadelphia|费城|San Antonio|圣安东尼奥|San Diego|圣迭戈|Dallas|达拉斯|San Jose|圣何塞|Austin|奥斯汀|Jacksonville|杰克逊维尔|Fort Worth|沃斯堡|Columbus|哥伦布|Charlotte|夏洛特|San Francisco|旧金山|Indianapolis|印第安纳波利斯|Seattle|西雅图|Denver|丹佛|Washington|华盛顿|Boston|波士顿|El Paso|埃尔帕索|Detroit|底特律|Nashville|纳什维尔|Portland|波特兰|Memphis|孟菲斯|Oklahoma City|俄克拉荷马城|Las Vegas|拉斯维加斯|Louisville|路易斯维尔|Baltimore|巴尔的摩|Milwaukee|密尔沃基|Albuquerque|阿尔伯克基|Tucson|图森|Fresno|弗雷斯诺|Sacramento|萨克拉门托|Kansas City|堪萨斯城|Long Beach|长滩|Mesa|梅萨|Atlanta|亚特兰大|Colorado Springs|科罗拉多斯普林斯|Virginia Beach|弗吉尼亚海滩|Raleigh|罗利|Omaha|奥马哈|Miami|迈阿密|Oakland|奥克兰|Minneapolis|明尼阿波利斯|Tulsa|塔尔萨|Wichita|威奇托|New Orleans|新奥尔良|🇺🇸/i))
   }
 })
 
@@ -45,9 +45,9 @@ config.outbounds.forEach(outbound => {
       config.outbounds.push(compatible_outbound)
       compatible = true
     }
-    outbound.outbounds.push(compatible_outbound.tag);
+    outbound.outbounds.push(compatible_outbound.tag)
   }
-});
+})
 
 $content = JSON.stringify(config, null, 2)
 
