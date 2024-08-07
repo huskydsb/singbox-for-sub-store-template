@@ -20,7 +20,7 @@
   "inbounds": [
     {
       "type": "mixed",
-      "listen": "::",
+      "listen": "127.0.0.1",
       "listen_port": 20122,
       "sniff": true,
       "sniff_override_destination": false,
@@ -30,10 +30,8 @@
     },
     {
       "type": "tun",
-      "interface_name": "singbox",
       "inet4_address": "172.19.0.1/30",
       "inet6_address": "fdfe:dcba:9876::1/126",
-      "mtu": 9000,
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
@@ -463,7 +461,7 @@
       "tag": "📲 电报消息",
       "type": "selector",
       "outbounds": [
-       "🚀节点选择",
+        "🚀节点选择",
         "🎈自动选择",
         "🇭🇰香港手动",
         "🇭🇰香港自动",
@@ -540,29 +538,147 @@
   ],
   "route": {
     "rules": [
-      { "rule_set": [ "ads" ], "outbound": "🛑 广告拦截" },
-      { "rule_set": [ "applications" ], "outbound": "🖥️ 直连软件" },
-      { "rule_set": [ "private" ], "outbound": "🔒 私有网络" },
-      { "rule_set": [ "microsoft-cn" ], "outbound": "🪟 微软服务" },
-      { "rule_set": [ "apple-cn" ], "outbound": "🍎 苹果服务" },
-      { "rule_set": [ "google-cn" ], "outbound": "🇬 谷歌服务" },
-      { "rule_set": [ "games-cn" ], "outbound": "🎮 游戏服务" },
-      { "rule_set": [ "netflix" ], "outbound": "🎥 奈飞视频" },
-      { "rule_set": [ "disney" ], "outbound": "📽️ 迪士尼+" },
-      { "rule_set": [ "max" ], "outbound": "🎞️ Max" },
-      { "rule_set": [ "primevideo" ], "outbound": "🎬 Prime Video" },
-      { "rule_set": [ "appletv" ], "outbound": "🍎 Apple TV+" },
-      { "rule_set": [ "youtube" ], "outbound": "📹 油管视频" },
-      { "rule_set": [ "tiktok" ], "outbound": "🎵 TikTok" },
-      { "rule_set": [ "bilibili" ], "outbound": "📺 哔哩哔哩" },
-      { "rule_set": [ "ai" ], "outbound": "🤖 人工智能" },
-      { "rule_set": [ "networktest" ], "outbound": "📈 网络测试" },
-      { "rule_set": [ "proxy" ], "outbound": "🪜 代理域名" },
-      { "rule_set": [ "cn" ], "outbound": "🇨🇳 直连域名" },
-      { "rule_set": [ "netflixip" ], "outbound": "🎥 奈飞视频", "skip_resolve": true },
-      { "rule_set": [ "telegramip" ], "outbound": "📲 电报消息", "skip_resolve": true },
-      { "rule_set": [ "privateip" ], "outbound": "🔒 私有网络", "skip_resolve": true },
-      { "rule_set": [ "cnip" ], "outbound": "🇨🇳 直连 IP" }
+      {
+        "rule_set": [
+          "ads"
+        ],
+        "outbound": "🛑 广告拦截"
+      },
+      {
+        "rule_set": [
+          "applications"
+        ],
+        "outbound": "🖥️ 直连软件"
+      },
+      {
+        "rule_set": [
+          "private"
+        ],
+        "outbound": "🔒 私有网络"
+      },
+      {
+        "rule_set": [
+          "microsoft-cn"
+        ],
+        "outbound": "🪟 微软服务"
+      },
+      {
+        "rule_set": [
+          "apple-cn"
+        ],
+        "outbound": "🍎 苹果服务"
+      },
+      {
+        "rule_set": [
+          "google-cn"
+        ],
+        "outbound": "🇬 谷歌服务"
+      },
+      {
+        "rule_set": [
+          "games-cn"
+        ],
+        "outbound": "🎮 游戏服务"
+      },
+      {
+        "rule_set": [
+          "netflix"
+        ],
+        "outbound": "🎥 奈飞视频"
+      },
+      {
+        "rule_set": [
+          "disney"
+        ],
+        "outbound": "📽️ 迪士尼+"
+      },
+      {
+        "rule_set": [
+          "max"
+        ],
+        "outbound": "🎞️ Max"
+      },
+      {
+        "rule_set": [
+          "primevideo"
+        ],
+        "outbound": "🎬 Prime Video"
+      },
+      {
+        "rule_set": [
+          "appletv"
+        ],
+        "outbound": "🍎 Apple TV+"
+      },
+      {
+        "rule_set": [
+          "youtube"
+        ],
+        "outbound": "📹 油管视频"
+      },
+      {
+        "rule_set": [
+          "tiktok"
+        ],
+        "outbound": "🎵 TikTok"
+      },
+      {
+        "rule_set": [
+          "bilibili"
+        ],
+        "outbound": "📺 哔哩哔哩"
+      },
+      {
+        "rule_set": [
+          "ai"
+        ],
+        "outbound": "🤖 人工智能"
+      },
+      {
+        "rule_set": [
+          "networktest"
+        ],
+        "outbound": "📈 网络测试"
+      },
+      {
+        "rule_set": [
+          "proxy"
+        ],
+        "outbound": "🪜 代理域名"
+      },
+      {
+        "rule_set": [
+          "cn"
+        ],
+        "outbound": "🇨🇳 直连域名"
+      },
+      {
+        "rule_set": [
+          "netflixip"
+        ],
+        "outbound": "🎥 奈飞视频",
+        "skip_resolve": true
+      },
+      {
+        "rule_set": [
+          "telegramip"
+        ],
+        "outbound": "📲 电报消息",
+        "skip_resolve": true
+      },
+      {
+        "rule_set": [
+          "privateip"
+        ],
+        "outbound": "🔒 私有网络",
+        "skip_resolve": true
+      },
+      {
+        "rule_set": [
+          "cnip"
+        ],
+        "outbound": "🇨🇳 直连 IP"
+      }
     ],
     "rule_set": [
       {
