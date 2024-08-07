@@ -321,126 +321,126 @@
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "akeip-filter",
         "type": "remote",
         "format": "binary",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/fakeip-filter.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🍎 苹果服务",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🍎 Apple TV+",
         "type": "remote",
         "format": "binary",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/appletv.sru",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "📺 哔哩哔哩",
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bilibili.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🛑 全球拦截",
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🇨🇳 直连 IP",
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🇨🇳 直连域名",
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "📽️ 迪士尼+",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🎥 奈飞视频",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🪟 微软服务",
         "type": "remote",
         "format": "binary",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/microsoft-cn.sru",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🎵 TikTok",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🤖 人工智能",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "🎮 游戏服务",
         "type": "remote",
         "format": "binary",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/games-cn.sru",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "📲 电报消息",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs",
-        "download_detour": "🎈 自动选择"
+        "download_detour": "direct"
       },
       {
         "tag": "GEOIP-CN",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "download_detour": "🎯 全球直连"
+        "download_detour": "direct"
       },
       {
         "tag": "GEOSITE-CN",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "download_detour": "🎯 全球直连"
+        "download_detour": "direct"
       },
       {
         "tag": "GEOLOCATION-!CN",
         "type": "remote",
         "format": "binary",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "🎯 全球直连"
+        "download_detour": "direct"
       }
     ],
     "rules": [
