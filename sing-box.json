@@ -4350,7 +4350,7 @@
         "server": "remote-dns"
       },
       {
-        "rule_set": "c",
+        "rule_set": "GEOSITE-CN",
         "server": "local-dns"
       },
       {
