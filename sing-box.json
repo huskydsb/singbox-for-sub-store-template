@@ -820,6 +820,18 @@
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/privateip.srs"
       },
       {
+        "tag": "GEOSITE-CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs"
+      },
+      {
+        "tag": "GEOLOCATION-!CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs"
+      },
+      {
         "tag": "cnip",
         "type": "remote",
         "format": "binary",
