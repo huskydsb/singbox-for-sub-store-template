@@ -575,9 +575,9 @@
       "tag": "🛑广告拦截",
       "type": "selector",
       "outbounds": [
-        "Block"
+        "REJECT"
       ],
-      "default": "Block"
+      "default": "REJECT"
     },
     {
       "tag": "🎯全球直连",
@@ -606,15 +606,15 @@
         "🇺🇸美国手动",
         "🇺🇸美国自动"
       ],
-       "default": "direct"
+      "default": "direct"
     },
     {
       "tag": "Direct",
       "type": "direct"
     },
     {
-      "type": "Block",
-      "tag": "block"
+      "tag": "REJECT",
+      "type": "block"
     },
     {
       "tag": "dns-out",
