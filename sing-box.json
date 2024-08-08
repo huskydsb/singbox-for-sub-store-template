@@ -755,18 +755,21 @@
           "netflixip"
         ],
         "outbound": "🎥奈飞视频",
+        "skip_resolve": true
       },
       {
         "rule_set": [
           "telegramip"
         ],
         "outbound": "📲电报消息",
+        "skip_resolve": true
       },
       {
         "rule_set": [
           "privateip"
         ],
         "outbound": "🔒私有网络",
+        "skip_resolve": true
       },
       {
         "rule_set": [
@@ -780,156 +783,182 @@
         "tag": "fakeip-filter",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/fakeip-filter.srs"
       },
       {
         "tag": "ads",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ads.srs"
       },
       {
         "tag": "applications",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/applications.srs"
       },
       {
         "tag": "private",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs"
       },
       {
         "tag": "microsoft-cn",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft@cn.srs"
       },
       {
         "tag": "apple-cn",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple@cn.srs"
       },
       {
         "tag": "google-cn",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-cn.srs"
       },
       {
         "tag": "games-cn",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-games@cn.srs"
       },
       {
         "tag": "netflix",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs"
       },
       {
         "tag": "disney",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs"
       },
       {
         "tag": "max",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/hbo.srs"
       },
       {
         "tag": "primevideo",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/primevideo.srs"
       },
       {
         "tag": "appletv",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/appletv.srs"
       },
       {
         "tag": "youtube",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs"
       },
       {
         "tag": "tiktok",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok@!cn.srs"
       },
       {
         "tag": "bilibili",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bilibili@cn.srs"
       },
       {
         "tag": "ai",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs"
       },
       {
         "tag": "networktest",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/networktest.srs"
       },
       {
         "tag": "proxy",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/gfw.srs"
       },
       {
         "tag": "cn",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cn.srs"
       },
       {
         "tag": "netflixip",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs"
       },
       {
         "tag": "telegramip",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs"
       },
       {
         "tag": "privateip",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
       },
       {
         "tag": "GEOSITE-CN",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs"
       },
       {
         "tag": "GEOLOCATION-!CN",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs"
       },
       {
         "tag": "cnip",
         "type": "remote",
         "format": "binary",
+        "download_detour": "direct",
         "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs"
       }
     ]
@@ -940,7 +969,7 @@
       "external_ui": "ui",
       "secret": "",
       "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour":"Proxy",
+      "external_ui_download_detour": "Proxy",
       "default_mode": "rule"
     },
     "cache_file": {
