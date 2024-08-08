@@ -754,22 +754,19 @@
         "rule_set": [
           "netflixip"
         ],
-        "outbound": "🎥奈飞视频",
-        "skip_resolve": true
+        "outbound": "🎥奈飞视频"
       },
       {
         "rule_set": [
           "telegramip"
         ],
-        "outbound": "📲电报消息",
-        "skip_resolve": true
+        "outbound": "📲电报消息"
       },
       {
         "rule_set": [
           "privateip"
         ],
-        "outbound": "🔒私有网络",
-        "skip_resolve": true
+        "outbound": "🔒私有网络"
       },
       {
         "rule_set": [
