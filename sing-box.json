@@ -40,44 +40,24 @@
     "rules": [
       {
         "outbound": "any",
-        "disable_cache": true,
+        "server": "local-dns",
+        "disable_cache": true
+      },
+      {
+        "clash_mode": "Direct",
         "server": "local-dns"
       },
       {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "domain_suffix": [
-              ".lan",
-              ".localdomain",
-              ".example",
-              ".invalid",
-              ".localhost",
-              ".test",
-              ".local",
-              ".home.arpa",
-              ".msftconnecttest.com",
-              ".msftncsi.com"
-            ],
-            "invert": true
-          },
-          {
-            "query_type": [
-              "A",
-              "AAAA"
-            ]
-          }
-        ],
+        "clash_mode": "Global",
         "server": "fakeip-dns"
       },
       {
-        "clash_mode": "direct",
-        "server": "local-dns"
-      },
-      {
-        "clash_mode": "global",
-        "server": "remote-dns"
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "server": "fakeip-dns",
+        "rewrite_ttl": 1
       },
       {
         "rule_set": "GEOSITE-CN",
@@ -90,45 +70,41 @@
     ],
     "final": "remote-dns",
     "strategy": "prefer_ipv4",
-    "disable_cache": true,
+    "disable_cache": false,
     "disable_expire": false,
     "independent_cache": false,
     "reverse_mapping": false,
     "fakeip": {
       "enabled": true,
-      "inet4_range": "198.18.0.1/16",
+      "inet4_range": "198.18.0.0/15",
       "inet6_range": "fc00::/18"
     }
   },
   "inbounds": [
     {
+      "type": "tun",
+      "inet4_address": "172.19.0.0/30",
+      "inet6_address": "fdfe:dcba:9876::0/126",
+      "stack": "mixed",
+      "auto_route": true,
+      "sniff": true,
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 7890
+        }
+      }
+    },
+    {
       "type": "mixed",
-      "tag": "mixed-in",
-      "listen": "::",
-      "listen_port": 8888,
+      "listen": "127.0.0.1",
+      "listen_port": 7890,
       "sniff": true,
       "sniff_override_destination": false,
       "tcp_fast_open": true,
       "tcp_multi_path": true,
       "udp_fragment": true
-    },
-    {
-      "type": "tun",
-      "inet4_address": "172.19.0.1/30",
-      "inet6_address": "fdfe:dcba:9876::1/126",
-      "auto_route": true,
-      "strict_route": true,
-      "endpoint_independent_nat": true,
-      "stack": "mixed",
-      "platform": {
-        "http_proxy": {
-          "enabled": true,
-          "server": "127.0.0.1",
-          "server_port": 8888
-        }
-      },
-      "sniff": true,
-      "sniff_override_destination": false
     }
   ],
   "outbounds": [
@@ -516,7 +492,8 @@
         "🇸🇬狮城自动",
         "🇺🇸美国手动",
         "🇺🇸美国自动"
-      ]
+      ],
+      "default": "🎯全球直连"
     },
     {
       "tag": "🇨🇳直连域名",
@@ -524,7 +501,8 @@
       "outbounds": [
         "🎯全球直连",
         "🚀节点选择"
-      ]
+      ],
+      "default": "🎯全球直连"
     },
     {
       "tag": "🇨🇳直连 IP",
@@ -532,7 +510,8 @@
       "outbounds": [
         "🎯全球直连",
         "🚀节点选择"
-      ]
+      ],
+      "default": "🎯全球直连"
     },
     {
       "tag": "🪜代理域名",
@@ -573,54 +552,45 @@
         "🇸🇬狮城自动",
         "🇺🇸美国手动",
         "🇺🇸美国自动"
-      ]
+      ],
+      "default": "🇺🇸美国自动"
     },
     {
       "tag": "🖥️直连软件",
       "type": "selector",
       "outbounds": [
         "🎯全球直连"
-      ]
+      ],
+      "default": "🎯全球直连"
     },
     {
       "tag": "🔒私有网络",
       "type": "selector",
       "outbounds": [
         "🎯全球直连"
-      ]
+      ],
+      "default": "🎯全球直连"
     },
     {
       "tag": "🛑广告拦截",
       "type": "selector",
       "outbounds": [
-        "REJECT"
-      ]
+        "Block"
+      ],
+      "default": "Block"
     },
     {
       "tag": "🎯全球直连",
       "type": "selector",
       "outbounds": [
-        "DIRECT"
-      ]
-    },
-    {
-      "tag": "REJECT",
-      "type": "block"
-    },
-    {
-      "tag": "dns-out",
-      "type": "dns"
-    },
-    {
-      "tag": "DIRECT",
-      "type": "direct"
+        "Direct"
+      ],
+      "default": "Direct"
     },
     {
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
-        "DIRECT",
-        "REJECT",
         "🚀节点选择",
         "🎈自动选择",
         "🇭🇰香港手动",
@@ -635,7 +605,20 @@
         "🇸🇬狮城自动",
         "🇺🇸美国手动",
         "🇺🇸美国自动"
-      ]
+      ],
+       "default": "direct"
+    },
+    {
+      "tag": "Direct",
+      "type": "direct"
+    },
+    {
+      "type": "Block",
+      "tag": "block"
+    },
+    {
+      "tag": "dns-out",
+      "type": "dns"
     }
   ],
   "route": {
@@ -645,12 +628,8 @@
         "outbound": "dns-out"
       },
       {
-        "ip_is_private": true,
-        "outbound": "DIRECT"
-      },
-      {
         "clash_mode": "Direct",
-        "outbound": "DIRECT"
+        "outbound": "Direc"
       },
       {
         "clash_mode": "Global",
@@ -958,15 +937,12 @@
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
       "external_ui": "ui",
-      "secret": "",
       "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "Proxy",
-      "default_mode": "rule"
+      "external_ui_download_detour": "proxy"
     },
     "cache_file": {
       "enabled": true,
-      "store_fakeip": true,
-      "store_rdrc": false
+      "store_fakeip": true
     }
   }
 }
