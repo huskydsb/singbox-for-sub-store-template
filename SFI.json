@@ -82,7 +82,7 @@
     "inbounds": [
         {
             "type": "mixed",
-            "listen": "::",
+            "listen": "127.0.0.1",
             "listen_port": 7890,
             "sniff": true,
             "sniff_override_destination": false,
@@ -96,7 +96,6 @@
             "inet6_address": "fdfe:dcba:9876::0/126",
             "auto_route": true,
             "strict_route": true,
-            "endpoint_independent_nat": true,
             "stack": "mixed",
             "platform": {
                 "http_proxy": {
