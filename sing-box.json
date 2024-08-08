@@ -608,6 +608,10 @@
       "type": "block"
     },
     {
+      "tag": "dns-out",
+      "type": "dns"
+    },
+    {
       "tag": "DIRECT",
       "type": "direct"
     },
