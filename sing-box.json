@@ -646,11 +646,11 @@
       },
       {
         "ip_is_private": true,
-        "outbound": "direct"
+        "outbound": "DIRECT"
       },
       {
         "clash_mode": "Direct",
-        "outbound": "direct"
+        "outbound": "DIRECT"
       },
       {
         "clash_mode": "Global",
