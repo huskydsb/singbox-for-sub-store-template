@@ -9,12 +9,24 @@
       {
         "tag": "remote-dns",
         "address": "https://dns.google/dns-query",
-        "detour": "🚀节点选择"
+        "address_resolver": "remote-resolver-dns",
+        "detour": "🚀 节点选择"
       },
       {
         "tag": "local-dns",
         "address": "https://dns.alidns.com/dns-query",
-        "detour": "🎯全球直连"
+        "address_resolver": "resolver-dns",
+        "detour": "🎯 全球直连"
+      },
+      {
+        "tag": "resolver-dns",
+        "address": "223.5.5.5",
+        "detour": "🎯 全球直连"
+      },
+      {
+        "tag": "remote-resolver-dns",
+        "address": "8.8.8.8",
+        "detour": "🚀 节点选择"
       },
       {
         "tag": "fakeip-dns",
