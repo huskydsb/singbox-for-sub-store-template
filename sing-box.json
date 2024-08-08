@@ -629,7 +629,7 @@
       },
       {
         "clash_mode": "Direct",
-        "outbound": "Direc"
+        "outbound": "Direct"
       },
       {
         "clash_mode": "Global",
