@@ -660,21 +660,18 @@
           "netflixip"
         ],
         "outbound": "🎥 奈飞视频",
-        "skip_resolve": true
       },
       {
         "rule_set": [
           "telegramip"
         ],
         "outbound": "📲 电报消息",
-        "skip_resolve": true
       },
       {
         "rule_set": [
           "privateip"
         ],
         "outbound": "🔒 私有网络",
-        "skip_resolve": true
       },
       {
         "rule_set": [
