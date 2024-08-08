@@ -83,7 +83,7 @@
         {
             "type": "mixed",
             "listen": "::",
-            "listen_port": 20122,
+            "listen_port": 7890,
             "sniff": true,
             "sniff_override_destination": false,
             "tcp_fast_open": true,
@@ -92,10 +92,8 @@
         },
         {
             "type": "tun",
-            "address": [
-                "172.18.0.1/30",
-                "fdfe:dcba:9876::1/126"
-            ],
+            "inet4_address": "172.19.0.0/30",
+            "inet6_address": "fdfe:dcba:9876::0/126",
             "auto_route": true,
             "strict_route": true,
             "endpoint_independent_nat": true,
@@ -104,7 +102,7 @@
                 "http_proxy": {
                     "enabled": true,
                     "server": "127.0.0.1",
-                    "server_port": 20122
+                    "server_port": 7890
                 }
             },
             "sniff": true,
