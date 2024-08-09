@@ -261,29 +261,6 @@
       "default": "proxy"
     },
     {
-      "tag": "apple",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "hk-auto",
-        "tw",
-        "tw-auto",
-        "jp",
-        "jp-auto",
-        "sg",
-        "sg-auto",
-        "us",
-        "us-auto",
-        "kr",
-        "kr-auto",
-        "all",
-        "all-auto"
-      ],
-      "default": "direct"
-    },
-    {
       "tag": "telegram",
       "type": "selector",
       "outbounds": [
