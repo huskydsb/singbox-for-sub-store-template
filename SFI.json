@@ -543,7 +543,7 @@
                 "🚀 节点选择",
                 "DIRECT"
             ],
-            "default": "DIREC"
+            "default": "DIRECT"
         },
         {
             "tag": "REJECT",
