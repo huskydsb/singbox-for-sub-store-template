@@ -79,35 +79,45 @@
             "inet6_range": "fc00::/18"
         }
     },
-    "inbounds": [
-        {
-            "type": "mixed",
-            "listen": "127.0.0.1",
-            "listen_port": 7890,
-            "sniff": true,
-            "sniff_override_destination": false,
-            "tcp_fast_open": true,
-            "tcp_multi_path": true,
-            "udp_fragment": true
+ "inbounds": [
+    {
+        "type": "mixed",
+        "listen": "127.0.0.1",
+        "listen_port": 7890,
+        "sniff": true,
+        "sniff_override_destination": false,
+        "tcp_fast_open": true,
+        "tcp_multi_path": true,
+        "udp_fragment": true,
+        "tls": {
+            "enabled": true,
+            "server_name": "www.google.com",
+            "alpn": ["http/1.1"]
         },
-        {
-            "type": "tun",
-            "inet4_address": "172.19.0.0/30",
-            "inet6_address": "fdfe:dcba:9876::0/126",
-            "auto_route": true,
-            "strict_route": true,
-            "stack": "mixed",
-            "platform": {
-                "http_proxy": {
-                    "enabled": true,
-                    "server": "127.0.0.1",
-                    "server_port": 7890
-                }
-            },
-            "sniff": true,
-            "sniff_override_destination": false
+        "obfuscation": {
+            "enabled": true,
+            "method": "v2ray-plugin",
+            "host": "www.google.com"
         }
-    ],
+    },
+    {
+        "type": "tun",
+        "inet4_address": "172.19.0.0/30",
+        "inet6_address": "fdfe:dcba:9876::0/126",
+        "auto_route": true,
+        "strict_route": true,
+        "stack": "mixed",
+        "platform": {
+            "http_proxy": {
+                "enabled": true,
+                "server": "127.0.0.1",
+                "server_port": 7890
+            }
+        },
+        "sniff": true,
+        "sniff_override_destination": false
+    }
+]
     "outbounds": [
         {
             "tag": "🚀 节点选择",
