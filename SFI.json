@@ -93,11 +93,6 @@
             "enabled": true,
             "server_name": "www.google.com",
             "alpn": ["http/1.1"]
-        },
-        "obfuscation": {
-            "enabled": true,
-            "method": "v2ray-plugin",
-            "host": "www.google.com"
         }
     },
     {
