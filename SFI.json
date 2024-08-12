@@ -117,7 +117,7 @@
         "sniff": true,
         "sniff_override_destination": false
     }
-]
+],
     "outbounds": [
         {
             "tag": "🚀 节点选择",
