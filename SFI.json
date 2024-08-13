@@ -523,7 +523,16 @@
             "type": "selector",
             "outbounds": [
                 "🚀 节点选择",
-                "🎯 全球直连"
+                "🎈 自动选择"
+            ],
+            "default": "🚀 节点选择"
+        },
+        {
+            "tag": "🪜 代理域名",
+            "type": "selector",
+            "outbounds": [
+                "🚀 节点选择",
+                "🎈 自动选择"
             ],
             "default": "🚀 节点选择"
         },
@@ -621,6 +630,12 @@
             {
                 "protocol": "dns",
                 "outbound": "dns-out"
+            },
+            {
+                "rule_set": [
+                    "GEOSITE-CN"
+                ],
+                "outbound": "🎯 全球直连"
             },
             {
                 "rule_set": [
@@ -732,6 +747,12 @@
             },
             {
                 "rule_set": [
+                    "GEOLOCATION-!CN"
+                ],
+                "outbound": "🪜 代理IP"
+            },
+            {
+                "rule_set": [
                     "cn"
                 ],
                 "outbound": "🇨🇳 直连域名"
@@ -762,12 +783,6 @@
             }
         ],
         "rule_set": [
-            {
-                "tag": "fakeip-filter",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/fakeip-filter.srs"
-            },
             {
                 "tag": "ads",
                 "type": "remote",
@@ -901,6 +916,12 @@
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/privateip.srs"
             },
             {
+                "tag": "cnip",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
+            },
+            {
                 "tag": "GEOSITE-CN",
                 "type": "remote",
                 "format": "binary",
@@ -911,12 +932,6 @@
                 "type": "remote",
                 "format": "binary",
                 "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs"
-            },
-            {
-                "tag": "cnip",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
             }
         ],
         "final": "🐟 漏网之鱼"
