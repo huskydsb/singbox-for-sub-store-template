@@ -582,7 +582,6 @@
       "inet6_address": "fdfe:dcba:9876::0/126",
       "stack": "system",
       "auto_route": true,
-      "override_android_vpn": true,
       "sniff": true,
       "platform": {
         "http_proxy": {
