@@ -158,7 +158,7 @@
         "download_detour": "🎯direct"
       },
       {
-        "tag": "geosite-category-ads-all",
+        "tag": "ads",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
