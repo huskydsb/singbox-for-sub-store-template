@@ -155,91 +155,91 @@
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok@!cn.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geosite-category-ads-all",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geoip-google",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/google.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geosite-google",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/google.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geolocation-!cn",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geoip-netflix",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/netflix.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/netflix.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "openai",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/telegram.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "geosite-telegram",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/telegram.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       },
       {
         "tag": "youtube",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/youtube.srs",
-        "download_detour": "🪜proxy"
+        "download_detour": "🎯direct"
       }
     ],
     "final": "🐟final",
