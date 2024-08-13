@@ -611,6 +611,14 @@
                 "outbound": "dns-out"
             },
             {
+                "clash_mode": "Global",
+                "outbound": "GLOBAL"
+            },
+            {
+                "clash_mode": "Direct",
+                "outbound": "DIRECT"
+            },
+            {
                 "rule_set": [
                     "GEOSITE-CN"
                 ],
