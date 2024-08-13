@@ -610,9 +610,6 @@
     "route": {
         "rules": [
             {
-                "inbound": "mixed-in"
-            },
-            {
                 "protocol": "dns",
                 "outbound": "dns-out"
             },
