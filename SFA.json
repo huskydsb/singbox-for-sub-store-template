@@ -95,10 +95,6 @@
         "outbound": "GLOBAL"
       },
       {
-        "rule_set": "ads",
-        "outbound": "🛑REJECT"
-      },
-      {
         "rule_set": "geosite-category-ads-all",
         "outbound": "🛑REJECT"
       },
@@ -158,7 +154,7 @@
         "download_detour": "🎯direct"
       },
       {
-        "tag": "ads",
+        "tag": "geosite-category-ads-all",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
