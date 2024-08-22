@@ -154,7 +154,6 @@
         "tag": "ads",
         "type": "remote",
         "format": "binary",
-        "path": "./ruleset/ads.srs",
         "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ads.srs"
       },
       {
