@@ -96,7 +96,7 @@
       },
       {
         "rule_set": "geosite-category-ads-all",
-        "outbound": "🛑广告拦截"
+        "outbound": "🛑REJECT"
       },
       {
         "rule_set": [
@@ -114,9 +114,7 @@
         "outbound": "🤖openai"
       },
       {
-        "rule_set": [
-          "tiktok"
-        ],
+        "rule_set": "tiktok",
         "outbound": "🎵tiktok"
       },
       {
