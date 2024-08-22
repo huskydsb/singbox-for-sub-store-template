@@ -96,7 +96,7 @@
       },
       {
         "rule_set": "geosite-category-ads-all",
-        "outbound": "🛑REJECT"
+        "outbound": "🛑广告拦截"
       },
       {
         "rule_set": [
@@ -143,9 +143,20 @@
       {
         "rule_set": "geolocation-!cn",
         "outbound": "🪜proxy"
+      },
+      {
+        "rule_set": "ads",
+        "outbound": "🛑广告拦截"
       }
     ],
     "rule_set": [
+      {
+        "tag": "ads",
+        "type": "remote",
+        "format": "binary",
+        "path": "./ruleset/ads.srs",
+        "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ads.srs"
+      },
       {
         "tag": "tiktok",
         "type": "remote",
@@ -517,6 +528,13 @@
       "tolerance": 1
     },
     {
+      "tag": "🛑广告拦截",
+      "type": "selector",
+      "outbounds": [
+        "🛑REJECT"
+      ]
+    },
+    {
       "tag": "🐟final",
       "type": "selector",
       "outbounds": [
@@ -610,7 +628,8 @@
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
       "external_ui": "ui",
-      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+      "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+      "external_ui_download_detour": "🚀all-auto"
     },
     "cache_file": {
       "enabled": true,
