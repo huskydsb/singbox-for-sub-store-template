@@ -19,13 +19,13 @@
             },
             {
                 "tag": "local-dns",
-                "address": "https://dns.alidns.com/dns-query",
+                "address": "https://doh.pub/dns-query",
                 "address_resolver": "resolver-local-dns",
                 "detour": "🎯 全球直连"
             },
             {
                 "tag": "resolver-local-dns",
-                "address": "223.5.5.5",
+                "address": "119.29.29.29",
                 "detour": "🎯 全球直连"
             },
             {
