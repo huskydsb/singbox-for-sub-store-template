@@ -579,6 +579,27 @@
             "default": "🚀 节点选择"
         },
         {
+            "tag": "🍿 国外媒体",
+            "type": "selector",
+            "outbounds": [
+                "🚀 节点选择",
+                "🎈 自动选择",
+                "🇭🇰 香港手动",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾手动",
+                "🇨🇳 台湾自动",
+                "🇯🇵 日本手动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国手动",
+                "🇰🇷 韩国自动",
+                "🇸🇬 狮城手动",
+                "🇸🇬 狮城自动",
+                "🇺🇸 美国手动",
+                "🇺🇸 美国自动"
+            ],
+            "default": "🚀 节点选择"
+        },
+        {
             "tag": "🎮 游戏服务",
             "type": "selector",
             "outbounds": [
@@ -846,6 +867,10 @@
                 "outbound": "✉️ WhatsApp"
             },
             {
+                "rule_set": "category-media",
+                "outbound": "🍿 国外媒体"
+            },
+            {
                 "rule_set": "netflixip",
                 "outbound": "🎥 Netflix"
             },
@@ -1045,6 +1070,13 @@
                 "format": "binary",
                 "download_detour": "",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/whatsapp.srs"
+            },
+            {
+                "tag": "category-media",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-media.srs"
             },
             {
                 "tag": "cnip",
