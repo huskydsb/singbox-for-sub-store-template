@@ -475,16 +475,6 @@
             "default": "🎯 全球直连"
         },
         {
-            "tag": "🇨🇳 直连域名",
-            "type": "selector",
-            "outbounds": [
-                "🎯 全球直连",
-                "🎈 自动选择",
-                "🚀 节点选择"
-            ],
-            "default": "🎯 全球直连"
-        },
-        {
             "tag": "🇨🇳 直连 IP",
             "type": "selector",
             "outbounds": [
@@ -681,10 +671,6 @@
                 "outbound": "🪜 代理IP"
             },
             {
-                "rule_set": "cn",
-                "outbound": "🇨🇳 直连域名"
-            },
-            {
                 "rule_set": "netflixip",
                 "outbound": "🎥 奈飞视频"
             },
@@ -809,13 +795,6 @@
                 "format": "binary",
                 "download_detour": "",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs"
-            },
-            {
-                "tag": "cn",
-                "type": "remote",
-                "format": "binary",
-                "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cn.srs"
             },
             {
                 "tag": "netflixip",
