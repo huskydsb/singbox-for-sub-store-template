@@ -435,6 +435,111 @@
             "default": "🎯 全球直连"
         },
         {
+            "tag": "📘 Facebook",
+            "type": "selector",
+            "outbounds": [
+                "🚀 节点选择",
+                "🎈 自动选择",
+                "🇭🇰 香港手动",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾手动",
+                "🇨🇳 台湾自动",
+                "🇯🇵 日本手动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国手动",
+                "🇰🇷 韩国自动",
+                "🇸🇬 狮城手动",
+                "🇸🇬 狮城自动",
+                "🇺🇸 美国手动",
+                "🇺🇸 美国自动"
+            ],
+            "default": "🚀 节点选择"
+        },
+        {
+            "tag": "🐦 Twitter",
+            "type": "selector",
+            "outbounds": [
+                "🚀 节点选择",
+                "🎈 自动选择",
+                "🇭🇰 香港手动",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾手动",
+                "🇨🇳 台湾自动",
+                "🇯🇵 日本手动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国手动",
+                "🇰🇷 韩国自动",
+                "🇸🇬 狮城手动",
+                "🇸🇬 狮城自动",
+                "🇺🇸 美国手动",
+                "🇺🇸 美国自动"
+            ],
+            "default": "🚀 节点选择"
+        },
+        {
+            "tag": "📸 Instagram",
+            "type": "selector",
+            "outbounds": [
+                "🚀 节点选择",
+                "🎈 自动选择",
+                "🇭🇰 香港手动",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾手动",
+                "🇨🇳 台湾自动",
+                "🇯🇵 日本手动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国手动",
+                "🇰🇷 韩国自动",
+                "🇸🇬 狮城手动",
+                "🇸🇬 狮城自动",
+                "🇺🇸 美国手动",
+                "🇺🇸 美国自动"
+            ],
+            "default": "🚀 节点选择"
+        },
+        {
+            "tag": "📎 LinkedIn",
+            "type": "selector",
+            "outbounds": [
+                "🚀 节点选择",
+                "🎈 自动选择",
+                "🇭🇰 香港手动",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾手动",
+                "🇨🇳 台湾自动",
+                "🇯🇵 日本手动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国手动",
+                "🇰🇷 韩国自动",
+                "🇸🇬 狮城手动",
+                "🇸🇬 狮城自动",
+                "🇺🇸 美国手动",
+                "🇺🇸 美国自动"
+            ],
+            "default": "🚀 节点选择"
+        },
+        {
+            "tag": "✉️ WhatsApp",
+            "type": "selector",
+            "outbounds": [
+                "🚀 节点选择",
+                "🎈 自动选择",
+                "🇭🇰 香港手动",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾手动",
+                "🇨🇳 台湾自动",
+                "🇯🇵 日本手动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国手动",
+                "🇰🇷 韩国自动",
+                "🇸🇬 狮城手动",
+                "🇸🇬 狮城自动",
+                "🇺🇸 美国手动",
+                "🇺🇸 美国自动"
+            ],
+            "default": "🚀 节点选择"
+        },
+        {
             "tag": "🎮 游戏服务",
             "type": "selector",
             "outbounds": [
@@ -667,6 +772,26 @@
                 "outbound": "🤖 人工智能"
             },
             {
+                "rule_set": "facebook",
+                "outbound": "📘 Facebook"
+            },
+            {
+                "rule_set": "twitter",
+                "outbound": "🐦 Twitter"
+            },
+            {
+                "rule_set": "instagram",
+                "outbound": "📸 Instagram"
+            },
+            {
+                "rule_set": "linkedin",
+                "outbound": "📎 LinkedIn"
+            },
+            {
+                "rule_set": "whatsapp",
+                "outbound": "✉️ WhatsApp"
+            },
+            {
                 "rule_set": "GEOLOCATION-!CN",
                 "outbound": "🪜 代理IP"
             },
@@ -823,6 +948,41 @@
                 "format": "binary",
                 "download_detour": "",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
+            },
+            {
+                "tag": "facebook",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/facebook.srs"
+            },
+            {
+                "tag": "twitter",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.srs"
+            },
+            {
+                "tag": "instagram",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/instagram.srs"
+            },
+            {
+                "tag": "linkedin",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/linkedin.srs"
+            },
+            {
+                "tag": "whatsapp",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/whatsapp.srs"
             },
             {
                 "tag": "cnip",
