@@ -39,9 +39,6 @@
     ],
     "rules": [
       {
-        "inbound": "mixed-in"
-      },
-      {
         "outbound": "any",
         "server": "local_dns",
         "disable_cache": true
