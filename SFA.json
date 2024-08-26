@@ -65,10 +65,10 @@
       },
       {
         "rule_set": "geosite-cn",
-        "server": "block_dns"
+        "server": "local_dns"
       },
       {
-        "rule_set": "geolocation-!cn",
+        "rule_set": "geosite-geolocation-!cn",
         "server": "remote_dns"
       }
     ],
