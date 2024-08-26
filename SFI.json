@@ -781,119 +781,119 @@
                 "tag": "ads",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ads.srs"
             },
             {
                 "tag": "applications",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/applications.srs"
             },
             {
                 "tag": "private",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/private.srs"
             },
             {
                 "tag": "microsoft-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/microsoft-cn.srs"
             },
             {
                 "tag": "apple-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/apple-cn.srs"
             },
             {
                 "tag": "google-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/google-cn.srs"
             },
             {
                 "tag": "games-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/games-cn.srs"
             },
             {
                 "tag": "netflix",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/netflix.srs"
             },
             {
                 "tag": "disney",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/disney.srs"
             },
             {
                 "tag": "max",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/max.srs"
             },
             {
                 "tag": "primevideo",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/primevideo.srs"
             },
             {
                 "tag": "appletv",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/appletv.srs"
             },
             {
                 "tag": "youtube",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/youtube.srs"
             },
             {
                 "tag": "tiktok",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/tiktok.srs"
             },
             {
                 "tag": "bilibili",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/bilibili.srs"
             },
             {
                 "tag": "ai",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ai.srs"
             },
             {
                 "tag": "networktest",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/networktest.srs"
             },
             {
