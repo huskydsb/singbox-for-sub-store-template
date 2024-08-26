@@ -675,7 +675,8 @@
       "external_controller": "127.0.0.1:9090",
       "external_ui": "ui",
       "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
-      "default_mode": "rule"
+      "default_mode": "rule",
+      "external_ui_download_detour": "🚀 节点选择",
     },
     "cache_file": {
       "enabled": true,
