@@ -371,27 +371,6 @@
             "default": "🚀 节点选择"
         },
         {
-            "tag": "🍎 Apple TV+",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "🎈 自动选择",
-                "🇭🇰 香港手动",
-                "🇭🇰 香港自动",
-                "🇨🇳 台湾手动",
-                "🇨🇳 台湾自动",
-                "🇯🇵 日本手动",
-                "🇯🇵 日本自动",
-                "🇰🇷 韩国手动",
-                "🇰🇷 韩国自动",
-                "🇸🇬 狮城手动",
-                "🇸🇬 狮城自动",
-                "🇺🇸 美国手动",
-                "🇺🇸 美国自动"
-            ],
-            "default": "🚀 节点选择"
-        },
-        {
             "tag": "📹 油管视频",
             "type": "selector",
             "outbounds": [
@@ -516,15 +495,6 @@
             "default": "🎯 全球直连"
         },
         {
-            "tag": "🪜 代理域名",
-            "type": "selector",
-            "outbounds": [
-                "🚀 节点选择",
-                "🎈 自动选择"
-            ],
-            "default": "🚀 节点选择"
-        },
-        {
             "tag": "🪜 代理IP",
             "type": "selector",
             "outbounds": [
@@ -532,16 +502,6 @@
                 "🎈 自动选择"
             ],
             "default": "🚀 节点选择"
-        },
-        {
-            "tag": "🖥️ 直连软件",
-            "type": "selector",
-            "outbounds": [
-                "🎯 全球直连",
-                "🚀 节点选择",
-                "🎈 自动选择"
-            ],
-            "default": "🎯 全球直连"
         },
         {
             "tag": "🔒 私有网络",
@@ -562,28 +522,6 @@
                 "REJECT"
             ],
             "default": "REJECT"
-        },
-        {
-            "tag": "📈 网络测试",
-            "type": "selector",
-            "outbounds": [
-                "🎯 全球直连",
-                "🚀 节点选择",
-                "🎈 自动选择",
-                "🇭🇰 香港手动",
-                "🇭🇰 香港自动",
-                "🇨🇳 台湾手动",
-                "🇨🇳 台湾自动",
-                "🇯🇵 日本手动",
-                "🇯🇵 日本自动",
-                "🇰🇷 韩国手动",
-                "🇰🇷 韩国自动",
-                "🇸🇬 狮城手动",
-                "🇸🇬 狮城自动",
-                "🇺🇸 美国手动",
-                "🇺🇸 美国自动"
-            ],
-            "default": "🚀 节点选择"
         },
         {
             "tag": "🎯 全球直连",
@@ -684,10 +622,6 @@
                 "outbound": "🛑 广告拦截"
             },
             {
-                "rule_set": "applications",
-                "outbound": "🖥️ 直连软件"
-            },
-            {
                 "rule_set": "private",
                 "outbound": "🔒 私有网络"
             },
@@ -700,7 +634,10 @@
                 "outbound": "🍎 苹果服务"
             },
             {
-                "rule_set": "google-cn",
+                "rule_set": [
+                    "google",
+                    "googleip"
+                ],
                 "outbound": "🇬 谷歌服务"
             },
             {
@@ -724,10 +661,6 @@
                 "outbound": "🎬 Prime Video"
             },
             {
-                "rule_set": "appletv",
-                "outbound": "🍎 Apple TV+"
-            },
-            {
                 "rule_set": "youtube",
                 "outbound": "📹 油管视频"
             },
@@ -744,14 +677,6 @@
                 "outbound": "🤖 人工智能"
             },
             {
-                "rule_set": "networktest",
-                "outbound": "📈 网络测试"
-            },
-            {
-                "rule_set": "proxy",
-                "outbound": "🪜 代理域名"
-            },
-            {
                 "rule_set": "GEOLOCATION-!CN",
                 "outbound": "🪜 代理IP"
             },
@@ -764,7 +689,10 @@
                 "outbound": "🎥 奈飞视频"
             },
             {
-                "rule_set": "telegramip",
+                "rule_set": [
+                    "telegramip",
+                    "telegram"
+                ],
                 "outbound": "📲 电报消息"
             },
             {
@@ -782,126 +710,105 @@
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ads.srs"
-            },
-            {
-                "tag": "applications",
-                "type": "remote",
-                "format": "binary",
-                "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/applications.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs"
             },
             {
                 "tag": "private",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/private.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
             },
             {
                 "tag": "microsoft-cn",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/microsoft-cn.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft@cn.srs"
             },
             {
                 "tag": "apple-cn",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/apple-cn.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple-cn.srs"
             },
             {
-                "tag": "google-cn",
+                "tag": "google",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/google-cn.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.srs"
+            },
+            {
+                "tag": "googleip",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs"
             },
             {
                 "tag": "games-cn",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/games-cn.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-games@cn.srs"
             },
             {
                 "tag": "netflix",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/netflix.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs"
             },
             {
                 "tag": "disney",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/disney.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs"
             },
             {
                 "tag": "max",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/max.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/hbo.srs"
             },
             {
                 "tag": "primevideo",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/primevideo.srs"
-            },
-            {
-                "tag": "appletv",
-                "type": "remote",
-                "format": "binary",
-                "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/appletv.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/primevideo.srs"
             },
             {
                 "tag": "youtube",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/youtube.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs"
             },
             {
                 "tag": "tiktok",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/tiktok.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.srs"
             },
             {
                 "tag": "bilibili",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/bilibili.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bilibili.srs"
             },
             {
                 "tag": "ai",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ai.srs"
-            },
-            {
-                "tag": "networktest",
-                "type": "remote",
-                "format": "binary",
-                "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/networktest.srs"
-            },
-            {
-                "tag": "proxy",
-                "type": "remote",
-                "format": "binary",
-                "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/proxy.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs"
             },
             {
                 "tag": "cn",
@@ -915,28 +822,35 @@
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/netflixip.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs"
+            },
+            {
+                "tag": "telegram",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs"
             },
             {
                 "tag": "telegramip",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/telegramip.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs"
             },
             {
                 "tag": "privateip",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/privateip.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
             },
             {
                 "tag": "cnip",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs"
             },
             {
                 "tag": "GEOSITE-CN",
