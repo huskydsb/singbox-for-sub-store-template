@@ -893,217 +893,217 @@
                 "tag": "ads",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": " https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/ads.srs"
             },
             {
                 "tag": "applications",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/applications.srs"
             },
             {
                 "tag": "proxy",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/proxy.srs"
             },
             {
                 "tag": "private",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
             },
             {
                 "tag": "microsoft-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft@cn.srs"
             },
             {
                 "tag": "apple-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple-cn.srs"
             },
             {
                 "tag": "appletv",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/appletv.srs"
             },
             {
                 "tag": "google",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.srs"
             },
             {
                 "tag": "googleip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs"
             },
             {
                 "tag": "games-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-games@cn.srs"
             },
             {
                 "tag": "netflix",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs"
             },
             {
                 "tag": "disney",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs"
             },
             {
                 "tag": "max",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/hbo.srs"
             },
             {
                 "tag": "primevideo",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/primevideo.srs"
             },
             {
                 "tag": "youtube",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs"
             },
             {
                 "tag": "tiktok",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.srs"
             },
             {
                 "tag": "bilibili",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bilibili.srs"
             },
             {
                 "tag": "ai",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs"
             },
             {
                 "tag": "netflixip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs"
             },
             {
                 "tag": "telegram",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs"
             },
             {
                 "tag": "telegramip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs"
             },
             {
                 "tag": "privateip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/private.srs"
             },
             {
                 "tag": "facebook",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/facebook.srs"
             },
             {
                 "tag": "twitter",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.srs"
             },
             {
                 "tag": "instagram",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/instagram.srs"
             },
             {
                 "tag": "linkedin",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/linkedin.srs"
             },
             {
                 "tag": "whatsapp",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/whatsapp.srs"
             },
             {
                 "tag": "cnip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs"
             },
             {
                 "tag": "cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs"
             },
             {
                 "tag": "GEOSITE-CN",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs"
             },
             {
                 "tag": "GEOLOCATION-!CN",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "",
+                "download_detour": "Direct",
                 "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs"
             }
         ],
