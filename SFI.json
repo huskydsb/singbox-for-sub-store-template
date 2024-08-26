@@ -54,8 +54,7 @@
             {
                 "query_type": [
                     "A",
-                    "AAAA",
-                    "HTTPS"
+                    "AAAA"
                 ],
                 "server": "fakeip-dns",
                 "rewrite_ttl": 1
