@@ -795,161 +795,161 @@
                 "tag": "private",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/private.srs"
             },
             {
                 "tag": "microsoft-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/microsoft-cn.srs"
             },
             {
                 "tag": "apple-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/apple-cn.srs"
             },
             {
                 "tag": "google-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/google-cn.srs"
             },
             {
                 "tag": "games-cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/games-cn.srs"
             },
             {
                 "tag": "netflix",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/netflix.srs"
             },
             {
                 "tag": "disney",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/disney.srs"
             },
             {
                 "tag": "max",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/max.srs"
             },
             {
                 "tag": "primevideo",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/primevideo.srs"
             },
             {
                 "tag": "appletv",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/appletv.srs"
             },
             {
                 "tag": "youtube",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/youtube.srs"
             },
             {
                 "tag": "tiktok",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/tiktok.srs"
             },
             {
                 "tag": "bilibili",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/bilibili.srs"
             },
             {
                 "tag": "ai",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ai.srs"
             },
             {
                 "tag": "networktest",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/networktest.srs"
             },
             {
                 "tag": "proxy",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/proxy.srs"
             },
             {
                 "tag": "cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cn.srs"
             },
             {
                 "tag": "netflixip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/netflixip.srs"
             },
             {
                 "tag": "telegramip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/telegramip.srs"
             },
             {
                 "tag": "privateip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/privateip.srs"
             },
             {
                 "tag": "cnip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
             },
             {
                 "tag": "GEOSITE-CN",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs"
             },
             {
                 "tag": "GEOLOCATION-!CN",
                 "type": "remote",
                 "format": "binary",
-                "download_detour":  "🎯 全球直连",
+                "download_detour": "🎯 全球直连",
                 "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs"
             }
         ],
@@ -967,5 +967,6 @@
             "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
             "default_mode": "Rule",
             "external_ui_download_detour": "🎯 全球直连"
+        }
     }
 }
