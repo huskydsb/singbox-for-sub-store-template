@@ -122,6 +122,7 @@
             "stack": "gvisor",
             "sniff": true,
             "sniff_override_destination": false,
+            "endpoint_independent_nat": true,
             "platform": {
                 "http_proxy": {
                     "enabled": true,
