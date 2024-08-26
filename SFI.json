@@ -1055,42 +1055,42 @@
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://pd.zwc365.com/cfworker/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/cnip.srs"
             },
             {
                 "tag": "cn",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://pd.zwc365.com/cfworker/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cn.srs"
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/cn.srs"
             },
             {
                 "tag": "ads",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://pd.zwc365.com/cfworker/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/ads.srs"
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/ads.srs"
             },
             {
                 "tag": "applications",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://pd.zwc365.com/cfworker/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/applications.srs"
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/applications.srs"
             },
             {
                 "tag": "appletv",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://pd.zwc365.com/cfworker/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/appletv.srs"
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/appletv.srs"
             },
             {
                 "tag": "proxy",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://pd.zwc365.com/cfworker/https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/proxy.srs"
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/proxy.srs"
             },
             {
                 "tag": "GEOSITE-CN",
