@@ -413,6 +413,28 @@
             "default": "🚀 节点选择"
         },
         {
+            "tag": "🍎 Apple TV+",
+            "type": "selector",
+            "outbounds": [
+                "🎯 全球直连",
+                "🎈 自动选择",
+                "🚀 节点选择",
+                "🇭🇰 香港手动",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾手动",
+                "🇨🇳 台湾自动",
+                "🇯🇵 日本手动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国手动",
+                "🇰🇷 韩国自动",
+                "🇸🇬 狮城手动",
+                "🇸🇬 狮城自动",
+                "🇺🇸 美国手动",
+                "🇺🇸 美国自动"
+            ],
+            "default": "🎯 全球直连"
+        },
+        {
             "tag": "📺 哔哩哔哩",
             "type": "selector",
             "outbounds": [
@@ -580,7 +602,17 @@
             "default": "🎯 全球直连"
         },
         {
-            "tag": "🇨🇳 直连 IP",
+            "tag": "🇨🇳 直连IP",
+            "type": "selector",
+            "outbounds": [
+                "🎯 全球直连",
+                "🎈 自动选择",
+                "🚀 节点选择"
+            ],
+            "default": "🎯 全球直连"
+        },
+        {
+            "tag": "🇨🇳 直连域名",
             "type": "selector",
             "outbounds": [
                 "🎯 全球直连",
@@ -591,6 +623,25 @@
         },
         {
             "tag": "🪜 代理IP",
+            "type": "selector",
+            "outbounds": [
+                "🚀 节点选择",
+                "🎈 自动选择"
+            ],
+            "default": "🚀 节点选择"
+        },
+        {
+            "tag": "🖥️ 直连软件",
+            "type": "selector",
+            "outbounds": [
+                "🎯 全球直连",
+                "🚀 节点选择",
+                "🎈 自动选择"
+            ],
+            "default": "🎯 全球直连"
+        },
+        {
+            "tag": "🪜 代理域名",
             "type": "selector",
             "outbounds": [
                 "🚀 节点选择",
@@ -800,6 +851,10 @@
                 "outbound": "🎥 奈飞视频"
             },
             {
+                "rule_set": "appletv",
+                "outbound": "🍎 Apple TV+"
+            },
+            {
                 "rule_set": [
                     "telegramip",
                     "telegram"
@@ -811,8 +866,20 @@
                 "outbound": "🔒 私有网络"
             },
             {
+                "rule_set": "proxy",
+                "outbound": "🪜 代理域名"
+            },
+            {
+                "rule_set": "applications",
+                "outbound": "🖥️ 直连软件"
+            },
+            {
+                "rule_set": "cn",
+                "outbound": "🇨🇳 直连域名"
+            },
+            {
                 "rule_set": "cnip",
-                "outbound": "🇨🇳 直连 IP"
+                "outbound": "🇨🇳 直连IP"
             }
         ],
         "rule_set": [
@@ -821,7 +888,21 @@
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
-                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs"
+                "url": " https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/ads.srs"
+            },
+            {
+                "tag": "applications",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/applications.srs"
+            },
+            {
+                "tag": "proxy",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/proxy.srs"
             },
             {
                 "tag": "private",
@@ -843,6 +924,13 @@
                 "format": "binary",
                 "download_detour": "",
                 "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple-cn.srs"
+            },
+            {
+                "tag": "appletv",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/appletv.srs"
             },
             {
                 "tag": "google",
@@ -986,6 +1074,13 @@
             },
             {
                 "tag": "cnip",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs"
+            },
+            {
+                "tag": "cn",
                 "type": "remote",
                 "format": "binary",
                 "download_detour": "",
