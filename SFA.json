@@ -205,6 +205,29 @@
       "default": "🪜proxy"
     },
     {
+      "tag": "🤖openai",
+      "type": "selector",
+      "outbounds": [
+        "🪜proxy",
+        "🎯direct",
+        "🇭🇰hk",
+        "🇭🇰hk-auto",
+        "🇨🇳tw",
+        "🇨🇳tw-auto",
+        "🇯🇵jp",
+        "🇯🇵jp-auto",
+        "🇸🇬sg",
+        "🇸🇬sg-auto",
+        "🇰🇷kr",
+        "🇰🇷kr-auto",
+        "🇺🇸us",
+        "🇺🇸us-auto",
+        "🚀all",
+        "🚀all-auto"
+      ],
+      "default": "🪜proxy"
+    },
+    {
       "tag": "📲telegram",
       "type": "selector",
       "outbounds": [
@@ -272,29 +295,6 @@
     },
     {
       "tag": "📹youtube",
-      "type": "selector",
-      "outbounds": [
-        "🪜proxy",
-        "🎯direct",
-        "🇭🇰hk",
-        "🇭🇰hk-auto",
-        "🇨🇳tw",
-        "🇨🇳tw-auto",
-        "🇯🇵jp",
-        "🇯🇵jp-auto",
-        "🇸🇬sg",
-        "🇸🇬sg-auto",
-        "🇰🇷kr",
-        "🇰🇷kr-auto",
-        "🇺🇸us",
-        "🇺🇸us-auto",
-        "🚀all",
-        "🚀all-auto"
-      ],
-      "default": "🪜proxy"
-    },
-    {
-      "tag": "🤖openai",
       "type": "selector",
       "outbounds": [
         "🪜proxy",
@@ -529,13 +529,6 @@
       {
         "rule_set": "geosite-tiktok",
         "outbound": "🎵tiktok"
-      },
-      {
-        "rule_set": [
-          "geoip-twitter",
-          "geosite-twitter"
-        ],
-        "outbound": "Twitter"
       },
       {
         "rule_set": [
