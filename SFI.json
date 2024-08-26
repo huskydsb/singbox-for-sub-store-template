@@ -95,6 +95,13 @@
             "inet6_range": "fc00::/18"
         }
     },
+    "ntp": {
+        "enabled": true,
+        "server": "time.apple.com",
+        "server_port": 123,
+        "interval": "30m",
+        "detour": "🎯 全球直连"
+    },
     "inbounds": [
         {
             "type": "mixed",
@@ -113,7 +120,7 @@
             "inet6_address": "fdfe:dcba:9876::0/126",
             "auto_route": true,
             "strict_route": true,
-            "stack": "mixed",
+            "stack": "system",
             "sniff": true,
             "sniff_override_destination": false,
             "platform": {
