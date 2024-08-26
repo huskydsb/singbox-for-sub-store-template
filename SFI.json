@@ -102,7 +102,6 @@
             "listen": "127.0.0.1",
             "listen_port": 7890,
             "sniff": true,
-            "sniff_override_destination": false,
             "tcp_fast_open": true,
             "tcp_multi_path": true,
             "udp_fragment": true
@@ -115,6 +114,8 @@
             "auto_route": true,
             "strict_route": true,
             "stack": "mixed",
+            "sniff": true,
+            "sniff_override_destination": false,
             "platform": {
                 "http_proxy": {
                     "enabled": true,
@@ -122,8 +123,6 @@
                     "server_port": 7890
                 }
             },
-            "sniff": true,
-            "sniff_override_destination": false
         }
     ],
     "outbounds": [
@@ -137,7 +136,7 @@
         },
         {
             "tag": "Direct",
-            "type": "Direct"
+            "type": "direct"
         },
         {
             "tag": "🚀 节点选择",
@@ -630,6 +629,40 @@
     ],
     "route": {
         "rules": [
+            {
+                "type": "logical",
+                "mode": "or",
+                "rules": [
+                    {
+                        "protocol": "dns"
+                    },
+                    {
+                        "port": 53
+                    }
+                ],
+                "outbound": "dns-out"
+            },
+            {
+                "type": "logical",
+                "mode": "or",
+                "rules": [
+                    {
+                        "port": 853
+                    },
+                    {
+                        "network": "udp",
+                        "port": 443
+                    },
+                    {
+                        "protocol": "stun"
+                    }
+                ],
+                "outbound": "REJECT"
+            },
+            {
+                "ip_is_private": true,
+                "outbound": "direct"
+            },
             {
                 "protocol": "dns",
                 "outbound": "dns-out"
