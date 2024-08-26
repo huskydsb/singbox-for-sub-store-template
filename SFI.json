@@ -900,56 +900,56 @@
                 "tag": "proxy",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/proxy.srs"
             },
             {
                 "tag": "cn",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cn.srs"
             },
             {
                 "tag": "netflixip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/netflixip.srs"
             },
             {
                 "tag": "telegramip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/telegramip.srs"
             },
             {
                 "tag": "privateip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/privateip.srs"
             },
             {
                 "tag": "cnip",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://github.com/DustinWin/ruleset_geodata/releases/download/sing-box-ruleset/cnip.srs"
             },
             {
                 "tag": "GEOSITE-CN",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs"
             },
             {
                 "tag": "GEOLOCATION-!CN",
                 "type": "remote",
                 "format": "binary",
-                "download_detour": "🚀 节点选择",
+                "download_detour":  "🎯 全球直连",
                 "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs"
             }
         ],
