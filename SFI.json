@@ -110,7 +110,7 @@
         },
         {
             "type": "mixed",
-            "tag": "mixed",
+            "tag": "mixed-in",
             "listen": "127.0.0.1",
             "listen_port": 7890,
             "sniff": true,
@@ -120,7 +120,7 @@
         },
         {
             "type": "tun",
-            "tag": "tun",
+            "tag": "tun-in",
             "inet4_address": "172.19.0.0/30",
             "inet6_address": "fdfe:dcba:9876::0/126",
             "auto_route": true,
