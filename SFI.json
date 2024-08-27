@@ -784,12 +784,20 @@
                 "outbound": "🎯 Direct"
             },
             {
-                "rule_set": "GEOSITE-CN",
-                "outbound": "🎯 全球直连"
-            },
-            {
                 "rule_set": "ads",
                 "outbound": "🛑 广告拦截"
+            },
+            {
+                "rule_set": "applications",
+                "outbound": "🖥️ 直连软件"
+            },
+            {
+                "rule_set": "cn",
+                "outbound": "🇨🇳 直连域名"
+            },
+            {
+                "rule_set": "cnip",
+                "outbound": "🇨🇳 直连IP"
             },
             {
                 "rule_set": "private",
@@ -813,6 +821,10 @@
             {
                 "rule_set": "games-cn",
                 "outbound": "🎮 游戏服务"
+            },
+            {
+                "rule_set": "GEOSITE-CN",
+                "outbound": "🎯 全球直连"
             },
             {
                 "rule_set": "netflix",
@@ -895,18 +907,6 @@
                     "GEOLOCATION-!CN"
                 ],
                 "outbound": "🪜 代理域名"
-            },
-            {
-                "rule_set": "applications",
-                "outbound": "🖥️ 直连软件"
-            },
-            {
-                "rule_set": "cn",
-                "outbound": "🇨🇳 直连域名"
-            },
-            {
-                "rule_set": "cnip",
-                "outbound": "🇨🇳 直连IP"
             }
         ],
         "rule_set": [
