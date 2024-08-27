@@ -96,10 +96,10 @@
     },
     "ntp": {
         "enabled": true,
-        "server": "ntp1.aliyun.com",
+        "server": "time.apple.com",
         "server_port": 123,
         "interval": "30m",
-        "detour": "🎯 Direct"
+        "detour": ""
     },
     "inbounds": [
         {
