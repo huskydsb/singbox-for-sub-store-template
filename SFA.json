@@ -34,7 +34,7 @@
       },
       {
         "tag": "block_dns",
-        "address": "rcode://success"
+        "address": "rcode://name_error"
       }
     ],
     "rules": [
@@ -144,7 +144,7 @@
       "type": "direct"
     },
     {
-      "tag": "🛑REJECT",
+      "tag": "🛑block",
       "type": "block"
     },
     {
@@ -513,7 +513,7 @@
       },
       {
         "rule_set": "geosite-category-ads-all",
-        "outbound": "🛑REJECT"
+        "outbound": "🛑block"
       },
       {
         "rule_set": [
