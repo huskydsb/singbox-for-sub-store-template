@@ -344,6 +344,15 @@
       "default": "🎯direct"
     },
     {
+      "tag": "🎮game",
+      "type": "selector",
+      "outbounds": [
+        "🪜proxy",
+        "🎯direct"
+      ],
+      "default": "🎯direct"
+    },
+    {
       "tag": "🇨🇳tw",
       "type": "selector",
       "outbounds": []
@@ -420,15 +429,6 @@
       "url": "https://www.gstatic.com/generate_204",
       "interval": "30m",
       "tolerance": 1
-    },
-    {
-      "tag": "🎮game",
-      "type": "selector",
-      "outbounds": [
-        "🪜proxy",
-        "🎯direct"
-      ],
-      "default": "🎯direct"
     },
     {
       "tag": "🐟final",
