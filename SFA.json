@@ -99,7 +99,7 @@
     {
       "type": "direct",
       "tag": "direct-in",
-      "listen": "::",
+      "listen": "127.0.0.1",
       "listen_port": 8888
     },
     {
@@ -506,19 +506,19 @@
         "type": "logical",
         "mode": "or",
         "rules": [
-            {
-                "port": 853
-            },
-            {
-                "network": "udp",
-                "port": 443
-            },
-            {
-                "protocol": "stun"
-            }
+          {
+            "port": 853
+          },
+          {
+            "network": "udp",
+            "port": 443
+          },
+          {
+            "protocol": "stun"
+          }
         ],
         "outbound": "🛑block"
-    },
+      },
       {
         "ip_is_private": true,
         "outbound": "🎯direct"
