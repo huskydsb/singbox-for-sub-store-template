@@ -782,10 +782,6 @@
                 "outbound": "🎯 Direct"
             },
             {
-                "clash_mode": "Block",
-                "outbound": "🛑 Block"
-            },
-            {
                 "rule_set": "ads",
                 "outbound": "🛑 广告拦截"
             },
