@@ -105,6 +105,16 @@
             "listen_port": 6666
         },
         {
+            "type": "mixed",
+            "tag": "mixed-in",
+            "listen": "127.0.0.1",
+            "listen_port": 8888,
+            "sniff": true,
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "udp_fragment": true
+        },
+        {
             "type": "tun",
             "tag": "tun-in",
             "inet4_address": "172.19.0.0/30",
