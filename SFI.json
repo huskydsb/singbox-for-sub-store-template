@@ -9,11 +9,11 @@
             {
                 "tag": "remote-dns",
                 "address": "https://dns.google/dns-query",
-                "address_resolver": "remote-resolver-dns",
+                "address_resolver": "resolver-remote-dns",
                 "detour": "🚀 节点选择"
             },
             {
-                "tag": "remote-resolver-dns",
+                "tag": "resolver-remote-dns",
                 "address": "8.8.8.8",
                 "detour": "🚀 节点选择"
             },
@@ -786,7 +786,11 @@
                 "outbound": "🛑 广告拦截"
             },
             {
-                "rule_set": "applications",
+                "rule_set": [
+                    "applications",
+                    "alibaba",
+                    "tencent"
+                ],
                 "outbound": "🖥️ 直连软件"
             },
             {
@@ -912,6 +916,20 @@
                 "format": "binary",
                 "download_detour": "",
                 "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/privateip.srs"
+            },
+            {
+                "tag": "tencent",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tencent.srs"
+            },
+            {
+                "tag": "alibaba",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/alibaba.srs"
             },
             {
                 "tag": "microsoft-cn",
