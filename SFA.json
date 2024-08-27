@@ -97,6 +97,12 @@
   },
   "inbounds": [
     {
+      "type": "direct",
+      "tag": "direct-in",
+      "listen": "127.0.0.1",
+      "listen_port": 6666
+    },
+    {
       "type": "mixed",
       "tag": "mixed-in",
       "listen": "127.0.0.1",
@@ -133,7 +139,7 @@
         "http_proxy": {
           "enabled": true,
           "server": "127.0.0.1",
-          "server_port": 6666
+          "server_port": 9999
         }
       }
     }
@@ -479,6 +485,10 @@
   ],
   "route": {
     "rules": [
+      {
+        "inbound": "direct-in",
+        "outbound": "dns-out"
+      },
       {
         "type": "logical",
         "mode": "or",
