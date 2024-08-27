@@ -100,13 +100,13 @@
       "type": "direct",
       "tag": "direct-in",
       "listen": "::",
-      "listen_port": 7890
+      "listen_port": 8888
     },
     {
       "type": "mixed",
       "tag": "mixed-in",
       "listen": "127.0.0.1",
-      "listen_port": 7890,
+      "listen_port": 9999,
       "sniff": true,
       "tcp_fast_open": true,
       "tcp_multi_path": true,
@@ -139,7 +139,7 @@
         "http_proxy": {
           "enabled": true,
           "server": "127.0.0.1",
-          "server_port": 7890
+          "server_port": 6666
         }
       }
     }
