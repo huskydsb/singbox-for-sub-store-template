@@ -786,11 +786,15 @@
                 "outbound": "🛑 广告拦截"
             },
             {
-                "rule_set": [
-                    "applications",
-                    "alibaba",
-                    "tencent"
-                ],
+                "rule_set": "applications",
+                "outbound": "🖥️ 直连软件"
+            },
+            {
+                "rule_set": "alibaba",
+                "outbound": "🖥️ 直连软件"
+            },
+            {
+                "rule_set": "tencent",
                 "outbound": "🖥️ 直连软件"
             },
             {
