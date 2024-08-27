@@ -104,7 +104,7 @@
     "inbounds": [
         {
             "type": "direct",
-            "tag": "dns-in",
+            "tag": "direct-in",
             "listen": "::",
             "listen_port": 7890
         },
@@ -738,7 +738,7 @@
     "route": {
         "rules": [
             {
-                "inbound": "dns-in",
+                "inbound": "direct-in",
                 "outbound": "dns-out"
             },
             {
