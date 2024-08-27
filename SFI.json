@@ -103,6 +103,12 @@
     },
     "inbounds": [
         {
+            "type": "direct",
+            "tag": "dns-in",
+            "listen": "::",
+            "listen_port": 7890
+        },
+        {
             "type": "mixed",
             "tag": "mixed",
             "listen": "127.0.0.1",
@@ -731,6 +737,10 @@
     ],
     "route": {
         "rules": [
+            {
+                "inbound": "dns-in",
+                "outbound": "dns-out"
+            },
             {
                 "type": "logical",
                 "mode": "or",
