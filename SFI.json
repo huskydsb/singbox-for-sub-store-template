@@ -736,6 +736,14 @@
     "route": {
         "rules": [
             {
+                "clash_mode": "Direct",
+                "outbound": "🎯 Direct"
+            },
+            {
+                "clash_mode": "Global",
+                "outbound": "GLOBAL"
+            },
+            {
                 "inbound": "direct-in",
                 "outbound": "dns-out"
             },
@@ -771,14 +779,6 @@
             },
             {
                 "ip_is_private": true,
-                "outbound": "🎯 Direct"
-            },
-            {
-                "clash_mode": "Global",
-                "outbound": "GLOBAL"
-            },
-            {
-                "clash_mode": "Direct",
                 "outbound": "🎯 Direct"
             },
             {
