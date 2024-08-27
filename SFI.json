@@ -96,7 +96,7 @@
     },
     "ntp": {
         "enabled": true,
-        "server": "ntp6.aliyun.com",
+        "server": "ntp1.aliyun.com",
         "server_port": 123,
         "interval": "30m",
         "detour": "🎯 Direct"
