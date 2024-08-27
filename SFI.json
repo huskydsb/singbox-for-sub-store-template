@@ -21,12 +21,12 @@
                 "tag": "local-dns",
                 "address": "https://doh.pub/dns-query",
                 "address_resolver": "resolver-local-dns",
-                "detour": "🎯 全球直连"
+                "detour": "🎯 Direct"
             },
             {
                 "tag": "resolver-local-dns",
                 "address": "119.29.29.29",
-                "detour": "🎯 全球直连"
+                "detour": "🎯 Direct"
             },
             {
                 "tag": "fakeip-dns",
@@ -60,11 +60,7 @@
                 "rewrite_ttl": 1
             },
             {
-                "rule_set": "GEOSITE-CN",
-                "server": "local-dns"
-            },
-            {
-                "rule_set": "GEOLOCATION-!CN",
+                "rule_set": "proxy",
                 "server": "remote-dns"
             },
             {
@@ -72,11 +68,11 @@
                 "mode": "and",
                 "rules": [
                     {
-                        "rule_set": "GEOLOCATION-!CN",
+                        "rule_set": "proxy",
                         "invert": true
                     },
                     {
-                        "rule_set": "GEOSITE-CN"
+                        "rule_set": "cn"
                     }
                 ],
                 "server": "local-dns",
@@ -107,16 +103,6 @@
             "tag": "direct-in",
             "listen": "127.0.0.1",
             "listen_port": 6666
-        },
-        {
-            "type": "mixed",
-            "tag": "mixed-in",
-            "listen": "127.0.0.1",
-            "listen_port": 8888,
-            "sniff": true,
-            "tcp_fast_open": true,
-            "tcp_multi_path": true,
-            "udp_fragment": true
         },
         {
             "type": "tun",
@@ -429,7 +415,7 @@
             "tag": "🍎 Apple TV+",
             "type": "selector",
             "outbounds": [
-                "🎯 全球直连",
+                "🎯 Direct",
                 "🎈 自动选择",
                 "🚀 节点选择",
                 "🇭🇰 香港手动",
@@ -600,7 +586,6 @@
             "type": "selector",
             "outbounds": [
                 "🎯 全球直连",
-                "🎈 自动选择",
                 "🚀 节点选择"
             ],
             "default": "🎯 全球直连"
@@ -610,7 +595,6 @@
             "type": "selector",
             "outbounds": [
                 "🎯 全球直连",
-                "🎈 自动选择",
                 "🚀 节点选择"
             ],
             "default": "🎯 全球直连"
@@ -619,9 +603,20 @@
             "tag": "🇬 谷歌服务",
             "type": "selector",
             "outbounds": [
-                "🎯 全球直连",
+                "🚀 节点选择",
                 "🎈 自动选择",
-                "🚀 节点选择"
+                "🇭🇰 香港手动",
+                "🇭🇰 香港自动",
+                "🇨🇳 台湾手动",
+                "🇨🇳 台湾自动",
+                "🇯🇵 日本手动",
+                "🇯🇵 日本自动",
+                "🇰🇷 韩国手动",
+                "🇰🇷 韩国自动",
+                "🇸🇬 狮城手动",
+                "🇸🇬 狮城自动",
+                "🇺🇸 美国手动",
+                "🇺🇸 美国自动"
             ],
             "default": "🚀 节点选择"
         },
@@ -630,7 +625,6 @@
             "type": "selector",
             "outbounds": [
                 "🎯 全球直连",
-                "🎈 自动选择",
                 "🚀 节点选择"
             ],
             "default": "🎯 全球直连"
@@ -640,7 +634,6 @@
             "type": "selector",
             "outbounds": [
                 "🎯 全球直连",
-                "🎈 自动选择",
                 "🚀 节点选择"
             ],
             "default": "🎯 全球直连"
@@ -650,7 +643,6 @@
             "type": "selector",
             "outbounds": [
                 "🎯 全球直连",
-                "🎈 自动选择",
                 "🚀 节点选择"
             ],
             "default": "🎯 全球直连"
@@ -660,8 +652,7 @@
             "type": "selector",
             "outbounds": [
                 "🎯 全球直连",
-                "🚀 节点选择",
-                "🎈 自动选择"
+                "🚀 节点选择"
             ],
             "default": "🎯 全球直连"
         },
@@ -679,8 +670,7 @@
             "type": "selector",
             "outbounds": [
                 "🎯 全球直连",
-                "🚀 节点选择",
-                "🎈 自动选择"
+                "🚀 节点选择"
             ],
             "default": "🎯 全球直连"
         },
@@ -689,7 +679,6 @@
             "type": "selector",
             "outbounds": [
                 "🚀 节点选择",
-                "🎈 自动选择",
                 "🛑 Block"
             ],
             "default": "🛑 Block"
@@ -708,7 +697,6 @@
             "type": "selector",
             "outbounds": [
                 "🚀 节点选择",
-                "🎈 自动选择",
                 "🎯 全球直连"
             ],
             "default": "🚀 节点选择"
@@ -800,7 +788,10 @@
                 "outbound": "🇨🇳 直连IP"
             },
             {
-                "rule_set": "private",
+                "rule_set": [
+                    "private",
+                    "privateip"
+                ],
                 "outbound": "🔒 私有网络"
             },
             {
@@ -823,11 +814,10 @@
                 "outbound": "🎮 游戏服务"
             },
             {
-                "rule_set": "GEOSITE-CN",
-                "outbound": "🎯 全球直连"
-            },
-            {
-                "rule_set": "netflix",
+                "rule_set": [
+                    "netflix",
+                    "netflixip"
+                ],
                 "outbound": "🎥 Netflix"
             },
             {
@@ -883,10 +873,6 @@
                 "outbound": "🍿 国外媒体"
             },
             {
-                "rule_set": "netflixip",
-                "outbound": "🎥 Netflix"
-            },
-            {
                 "rule_set": "appletv",
                 "outbound": "🍎 Apple TV+"
             },
@@ -898,14 +884,7 @@
                 "outbound": "📲 Telegram"
             },
             {
-                "rule_set": "privateip",
-                "outbound": "🔒 私有网络"
-            },
-            {
-                "rule_set": [
-                    "proxy",
-                    "GEOLOCATION-!CN"
-                ],
+                "rule_set": "proxy",
                 "outbound": "🪜 代理域名"
             }
         ],
@@ -916,6 +895,13 @@
                 "format": "binary",
                 "download_detour": "",
                 "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/private.srs"
+            },
+            {
+                "tag": "privateip",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/privateip.srs"
             },
             {
                 "tag": "microsoft-cn",
@@ -958,6 +944,13 @@
                 "format": "binary",
                 "download_detour": "",
                 "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/netflix.srs"
+            },
+            {
+                "tag": "netflixip",
+                "type": "remote",
+                "format": "binary",
+                "download_detour": "",
+                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs"
             },
             {
                 "tag": "disney",
@@ -1009,13 +1002,6 @@
                 "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/ai.srs"
             },
             {
-                "tag": "netflixip",
-                "type": "remote",
-                "format": "binary",
-                "download_detour": "",
-                "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs"
-            },
-            {
                 "tag": "telegram",
                 "type": "remote",
                 "format": "binary",
@@ -1028,13 +1014,6 @@
                 "format": "binary",
                 "download_detour": "",
                 "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/telegramip.srs"
-            },
-            {
-                "tag": "privateip",
-                "type": "remote",
-                "format": "binary",
-                "download_detour": "",
-                "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/privateip.srs"
             },
             {
                 "tag": "facebook",
@@ -1119,20 +1098,6 @@
                 "format": "binary",
                 "download_detour": "",
                 "url": "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@sing-box-ruleset/proxy.srs"
-            },
-            {
-                "tag": "GEOSITE-CN",
-                "type": "remote",
-                "format": "binary",
-                "download_detour": "",
-                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs"
-            },
-            {
-                "tag": "GEOLOCATION-!CN",
-                "type": "remote",
-                "format": "binary",
-                "download_detour": "",
-                "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs"
             }
         ],
         "final": "🐟 漏网之鱼"
