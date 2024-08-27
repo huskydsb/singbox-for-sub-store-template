@@ -690,9 +690,9 @@
             "outbounds": [
                 "🚀 节点选择",
                 "🎈 自动选择",
-                "🛑 REJECT"
+                "🛑 Block"
             ],
-            "default": "🛑 REJECT"
+            "default": "🛑 Block"
         },
         {
             "tag": "🎯 全球直连",
@@ -769,7 +769,7 @@
                         "protocol": "stun"
                     }
                 ],
-                "outbound": "🛑 REJECT"
+                "outbound": "🛑 Block"
             },
             {
                 "ip_is_private": true,
