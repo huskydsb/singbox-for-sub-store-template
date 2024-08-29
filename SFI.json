@@ -51,10 +51,18 @@
         "clash_mode": "Global",
         "server": "remote-dns"
       },
+
       {
-        "query_type": [ "A", "AAAA" ],
+        "query_type":
+        [ "A",
+          "AAAA" ],
         "server": "fakeip-dns",
         "rewrite_ttl": 1
+      },
+
+      {
+        "rule_set": "apple-cn",
+        "server": "remote-dns"
       },
       {
         "rule_set": "proxy",
