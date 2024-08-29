@@ -51,15 +51,14 @@
         "clash_mode": "Global",
         "server": "remote-dns"
       },
-
       {
-        "query_type":
-        [ "A",
-          "AAAA" ],
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
         "server": "fakeip-dns",
         "rewrite_ttl": 1
       },
-
       {
         "rule_set": "apple-cn",
         "server": "remote-dns"
@@ -175,7 +174,7 @@
     {
       "tag": "🎈 自动选择",
       "type": "urltest",
-      "outbounds": [ ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "30m",
       "tolerance": 1
@@ -183,7 +182,7 @@
     {
       "tag": "🇺🇸 美国自动",
       "type": "urltest",
-      "outbounds": [ ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "30m",
       "tolerance": 1
@@ -191,12 +190,12 @@
     {
       "tag": "🇺🇸 美国手动",
       "type": "selector",
-      "outbounds": [ ]
+      "outbounds": []
     },
     {
       "tag": "🇯🇵 日本自动",
       "type": "urltest",
-      "outbounds": [ ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "30m",
       "tolerance": 1
@@ -204,12 +203,12 @@
     {
       "tag": "🇯🇵 日本手动",
       "type": "selector",
-      "outbounds": [ ]
+      "outbounds": []
     },
     {
       "tag": "🇰🇷 韩国自动",
       "type": "urltest",
-      "outbounds": [ ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "30m",
       "tolerance": 1
@@ -217,12 +216,12 @@
     {
       "tag": "🇰🇷 韩国手动",
       "type": "selector",
-      "outbounds": [ ]
+      "outbounds": []
     },
     {
       "tag": "🇸🇬 狮城自动",
       "type": "urltest",
-      "outbounds": [ ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "30m",
       "tolerance": 1
@@ -230,12 +229,12 @@
     {
       "tag": "🇸🇬 狮城手动",
       "type": "selector",
-      "outbounds": [ ]
+      "outbounds": []
     },
     {
       "tag": "🇭🇰 香港自动",
       "type": "urltest",
-      "outbounds": [ ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "30m",
       "tolerance": 1
@@ -243,12 +242,12 @@
     {
       "tag": "🇭🇰 香港手动",
       "type": "selector",
-      "outbounds": [ ]
+      "outbounds": []
     },
     {
       "tag": "🇨🇳 台湾自动",
       "type": "urltest",
-      "outbounds": [ ],
+      "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "30m",
       "tolerance": 1
@@ -256,7 +255,7 @@
     {
       "tag": "🇨🇳 台湾手动",
       "type": "selector",
-      "outbounds": [ ]
+      "outbounds": []
     },
     {
       "tag": "📲 Telegram",
@@ -599,13 +598,19 @@
     {
       "tag": "🎮 游戏服务",
       "type": "selector",
-      "outbounds": [ "🎯 全球直连", "🚀 节点选择" ],
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ],
       "default": "🎯 全球直连"
     },
     {
       "tag": "🪟 微软服务",
       "type": "selector",
-      "outbounds": [ "🎯 全球直连", "🚀 节点选择" ],
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ],
       "default": "🎯 全球直连"
     },
     {
@@ -632,55 +637,82 @@
     {
       "tag": "🍎 苹果服务",
       "type": "selector",
-      "outbounds": [ "🎯 全球直连", "🚀 节点选择" ],
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ],
       "default": "🎯 全球直连"
     },
     {
       "tag": "🇨🇳 直连IP",
       "type": "selector",
-      "outbounds": [ "🎯 全球直连", "🚀 节点选择" ],
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ],
       "default": "🎯 全球直连"
     },
     {
       "tag": "🇨🇳 直连域名",
       "type": "selector",
-      "outbounds": [ "🎯 全球直连", "🚀 节点选择" ],
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ],
       "default": "🎯 全球直连"
     },
     {
       "tag": "🖥️ 直连软件",
       "type": "selector",
-      "outbounds": [ "🎯 全球直连", "🚀 节点选择" ],
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ],
       "default": "🎯 全球直连"
     },
     {
       "tag": "🪜 代理域名",
       "type": "selector",
-      "outbounds": [ "🚀 节点选择", "🎈 自动选择" ],
+      "outbounds": [
+        "🚀 节点选择",
+        "🎈 自动选择"
+      ],
       "default": "🚀 节点选择"
     },
     {
       "tag": "🔒 私有网络",
       "type": "selector",
-      "outbounds": [ "🎯 全球直连", "🚀 节点选择" ],
+      "outbounds": [
+        "🎯 全球直连",
+        "🚀 节点选择"
+      ],
       "default": "🎯 全球直连"
     },
     {
       "tag": "🛑 广告拦截",
       "type": "selector",
-      "outbounds": [ "🚀 节点选择", "🛑 Block" ],
+      "outbounds": [
+        "🚀 节点选择",
+        "🛑 Block"
+      ],
       "default": "🛑 Block"
     },
     {
       "tag": "🎯 全球直连",
       "type": "selector",
-      "outbounds": [ "🚀 节点选择", "🎯 Direct" ],
+      "outbounds": [
+        "🚀 节点选择",
+        "🎯 Direct"
+      ],
       "default": "🎯 Direct"
     },
     {
       "tag": "🐟 漏网之鱼",
       "type": "selector",
-      "outbounds": [ "🚀 节点选择", "🎯 全球直连" ],
+      "outbounds": [
+        "🚀 节点选择",
+        "🎯 全球直连"
+      ],
       "default": "🚀 节点选择"
     },
     {
@@ -778,7 +810,10 @@
         "outbound": "🇨🇳 直连IP"
       },
       {
-        "rule_set": [ "private", "privateip" ],
+        "rule_set": [
+          "private",
+          "privateip"
+        ],
         "outbound": "🔒 私有网络"
       },
       {
@@ -790,7 +825,10 @@
         "outbound": "🍎 苹果服务"
       },
       {
-        "rule_set": [ "google", "googleip" ],
+        "rule_set": [
+          "google",
+          "googleip"
+        ],
         "outbound": "🇬 谷歌服务"
       },
       {
@@ -798,7 +836,10 @@
         "outbound": "🎮 游戏服务"
       },
       {
-        "rule_set": [ "netflix", "netflixip" ],
+        "rule_set": [
+          "netflix",
+          "netflixip"
+        ],
         "outbound": "🎥 Netflix"
       },
       {
@@ -858,7 +899,10 @@
         "outbound": "🍎 Apple TV+"
       },
       {
-        "rule_set": [ "telegramip", "telegram" ],
+        "rule_set": [
+          "telegramip",
+          "telegram"
+        ],
         "outbound": "📲 Telegram"
       },
       {
