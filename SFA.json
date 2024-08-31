@@ -563,6 +563,8 @@
       },
       {
         "rule_set": [
+          "geosite-googlefcm",
+          "geosite-google-trust-services",
           "geoip-google",
           "geosite-google"
         ],
@@ -628,6 +630,20 @@
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geosite/google.srs",
+        "download_detour": "🎯direct"
+      },
+      {
+        "tag": "geosite-googlefcm",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/googlefcm.srs",
+        "download_detour": "🎯direct"
+      },
+      {
+        "tag": "geosite-google-trust-services",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-trust-services.srs",
         "download_detour": "🎯direct"
       },
       {
