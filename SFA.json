@@ -486,6 +486,21 @@
   "route": {
     "rules": [
       {
+        "ip_is_private": true,
+        "outbound": "🎯direct"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "🎯direct"
+      },
+      {
+        "rule_set": [
+          "geoip-cn",
+          "geosite-cn"
+        ],
+        "outbound": "🇨🇳china"
+      },
+      {
         "inbound": "direct-in",
         "outbound": "dns-out"
       },
@@ -501,6 +516,21 @@
           }
         ],
         "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "GLOBAL"
+      },
+      {
+        "rule_set": [
+          "geosite-games-cn",
+          "geosite-tencent-games"
+        ],
+        "outbound": "🎮game"
+      },
+      {
+        "rule_set": "geosite-category-ads-all",
+        "outbound": "🛑block"
       },
       {
         "type": "logical",
@@ -520,27 +550,11 @@
         "outbound": "🛑block"
       },
       {
-        "ip_is_private": true,
-        "outbound": "🎯direct"
-      },
-      {
-        "clash_mode": "Direct",
-        "outbound": "🎯direct"
-      },
-      {
-        "clash_mode": "Global",
-        "outbound": "GLOBAL"
-      },
-      {
         "rule_set": [
-          "geosite-games-cn",
-          "geosite-tencent-games"
+          "geoip-telegram",
+          "geosite-telegram"
         ],
-        "outbound": "🎮game"
-      },
-      {
-        "rule_set": "geosite-category-ads-all",
-        "outbound": "🛑block"
+        "outbound": "📲telegram"
       },
       {
         "rule_set": [
@@ -569,20 +583,6 @@
           "geosite-google"
         ],
         "outbound": "🇬google"
-      },
-      {
-        "rule_set": [
-          "geoip-telegram",
-          "geosite-telegram"
-        ],
-        "outbound": "📲telegram"
-      },
-      {
-        "rule_set": [
-          "geoip-cn",
-          "geosite-cn"
-        ],
-        "outbound": "🇨🇳china"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
