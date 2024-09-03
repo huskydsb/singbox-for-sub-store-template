@@ -495,6 +495,15 @@
       },
       {
         "rule_set": [
+          "geosite-googlefcm",
+          "geosite-google-trust-services",
+          "geoip-google",
+          "geosite-google"
+        ],
+        "outbound": "🇬google"
+      },
+      {
+        "rule_set": [
           "geoip-cn",
           "geosite-cn"
         ],
@@ -574,15 +583,6 @@
       {
         "rule_set": "geosite-tiktok",
         "outbound": "🎵tiktok"
-      },
-      {
-        "rule_set": [
-          "geosite-googlefcm",
-          "geosite-google-trust-services",
-          "geoip-google",
-          "geosite-google"
-        ],
-        "outbound": "🇬google"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
