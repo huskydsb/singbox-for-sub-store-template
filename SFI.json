@@ -740,178 +740,178 @@
   "route": {
     "rules": [
       {
-        "clash_mode": "Direct",
-        "outbound": "🎯 Direct"
+          "clash_mode": "Direct",
+          "outbound": "🎯 Direct"
       },
       {
-        "clash_mode": "Global",
-        "outbound": "GLOBAL"
+          "ip_is_private": true,
+          "outbound": "🎯 Direct"
       },
       {
-        "inbound": "direct-in",
-        "outbound": "dns-out"
+          "rule_set": "applications",
+          "outbound": "🖥️ 直连软件"
       },
       {
-        "type": "logical",
-        "mode": "or",
-        "rules": [
-          {
-            "protocol": "dns"
-          },
-          {
-            "port": 53
-          }
-        ],
-        "outbound": "dns-out"
+          "rule_set": "alibaba",
+          "outbound": "🖥️ 直连软件"
       },
       {
-        "type": "logical",
-        "mode": "or",
-        "rules": [
-          {
-            "port": 853
-          },
-          {
-            "network": "udp",
-            "port": 443
-          },
-          {
-            "protocol": "stun"
-          }
-        ],
-        "outbound": "🛑 Block"
+          "rule_set": "tencent",
+          "outbound": "🖥️ 直连软件"
       },
       {
-        "ip_is_private": true,
-        "outbound": "🎯 Direct"
+          "rule_set": [
+              "private",
+              "privateip"
+          ],
+          "outbound": "🔒 私有网络"
       },
       {
-        "rule_set": "ads",
-        "outbound": "🛑 广告拦截"
+          "inbound": "direct-in",
+          "outbound": "dns-out"
       },
       {
-        "rule_set": "applications",
-        "outbound": "🖥️ 直连软件"
+          "type": "logical",
+          "mode": "or",
+          "rules": [
+              {
+                  "protocol": "dns"
+              },
+              {
+                  "port": 53
+              }
+          ],
+          "outbound": "dns-out"
       },
       {
-        "rule_set": "alibaba",
-        "outbound": "🖥️ 直连软件"
+          "clash_mode": "Global",
+          "outbound": "GLOBAL"
       },
       {
-        "rule_set": "tencent",
-        "outbound": "🖥️ 直连软件"
+          "rule_set": "cn",
+          "outbound": "🇨🇳 直连域名"
       },
       {
-        "rule_set": "cn",
-        "outbound": "🇨🇳 直连域名"
+          "rule_set": "cnip",
+          "outbound": "🇨🇳 直连IP"
       },
       {
-        "rule_set": "cnip",
-        "outbound": "🇨🇳 直连IP"
+          "rule_set": "ads",
+          "outbound": "🛑 广告拦截"
       },
       {
-        "rule_set": [
-          "private",
-          "privateip"
-        ],
-        "outbound": "🔒 私有网络"
+          "type": "logical",
+          "mode": "or",
+          "rules": [
+              {
+                  "port": 853
+              },
+              {
+                  "network": "udp",
+                  "port": 443
+              },
+              {
+                  "protocol": "stun"
+              }
+          ],
+          "outbound": "🛑 Block"
       },
       {
-        "rule_set": "microsoft-cn",
-        "outbound": "🪟 微软服务"
+          "rule_set": "microsoft-cn",
+          "outbound": "🪟 微软服务"
       },
       {
-        "rule_set": "apple-cn",
-        "outbound": "🍎 苹果服务"
+          "rule_set": "apple-cn",
+          "outbound": "🍎 苹果服务"
       },
       {
-        "rule_set": [
-          "googlefcm",
-          "google-trust-services",
-          "google",
-          "googleip"
-        ],
-        "outbound": "🇬 谷歌服务"
+          "rule_set": [
+              "googlefcm",
+              "google-trust-services",
+              "google",
+              "googleip"
+          ],
+          "outbound": "🇬 谷歌服务"
       },
       {
-        "rule_set": "games-cn",
-        "outbound": "🎮 游戏服务"
+          "rule_set": "games-cn",
+          "outbound": "🎮 游戏服务"
       },
       {
-        "rule_set": [
-          "netflix",
-          "netflixip"
-        ],
-        "outbound": "🎥 Netflix"
+          "rule_set": [
+              "netflix",
+              "netflixip"
+          ],
+          "outbound": "🎥 Netflix"
       },
       {
-        "rule_set": "disney",
-        "outbound": "📽️ Disney+"
+          "rule_set": [
+              "telegramip",
+              "telegram"
+          ],
+          "outbound": "📲 Telegram"
       },
       {
-        "rule_set": "max",
-        "outbound": "🎞️ Max"
+          "rule_set": "disney",
+          "outbound": "📽️ Disney+"
       },
       {
-        "rule_set": "primevideo",
-        "outbound": "🎬 Prime Video"
+          "rule_set": "max",
+          "outbound": "🎞️ Max"
       },
       {
-        "rule_set": "youtube",
-        "outbound": "📹 YouTube"
+          "rule_set": "primevideo",
+          "outbound": "🎬 Prime Video"
       },
       {
-        "rule_set": "tiktok",
-        "outbound": "🎵 TikTok"
+          "rule_set": "youtube",
+          "outbound": "📹 YouTube"
       },
       {
-        "rule_set": "bilibili",
-        "outbound": "📺 Bilibili"
+          "rule_set": "tiktok",
+          "outbound": "🎵 TikTok"
       },
       {
-        "rule_set": "ai",
-        "outbound": "🤖 Ai"
+          "rule_set": "bilibili",
+          "outbound": "📺 Bilibili"
       },
       {
-        "rule_set": "facebook",
-        "outbound": "📘 Facebook"
+          "rule_set": "ai",
+          "outbound": "🤖 Ai"
       },
       {
-        "rule_set": "twitter",
-        "outbound": "🐦 Twitter"
+          "rule_set": "facebook",
+          "outbound": "📘 Facebook"
       },
       {
-        "rule_set": "instagram",
-        "outbound": "📸 Instagram"
+          "rule_set": "twitter",
+          "outbound": "🐦 Twitter"
       },
       {
-        "rule_set": "linkedin",
-        "outbound": "📎 LinkedIn"
+          "rule_set": "instagram",
+          "outbound": "📸 Instagram"
       },
       {
-        "rule_set": "whatsapp",
-        "outbound": "✉️ WhatsApp"
+          "rule_set": "linkedin",
+          "outbound": "📎 LinkedIn"
       },
       {
-        "rule_set": "category-media",
-        "outbound": "🍿 国外媒体"
+          "rule_set": "whatsapp",
+          "outbound": "✉️ WhatsApp"
       },
       {
-        "rule_set": "appletv",
-        "outbound": "🍎 Apple TV+"
+          "rule_set": "category-media",
+          "outbound": "🍿 国外媒体"
       },
       {
-        "rule_set": [
-          "telegramip",
-          "telegram"
-        ],
-        "outbound": "📲 Telegram"
+          "rule_set": "appletv",
+          "outbound": "🍎 Apple TV+"
       },
       {
-        "rule_set": "proxy",
-        "outbound": "🪜 代理域名"
+          "rule_set": "proxy",
+          "outbound": "🪜 代理域名"
       }
-    ],
+  ],
     "rule_set": [
       {
         "tag": "private",
