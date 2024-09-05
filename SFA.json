@@ -196,7 +196,6 @@
       "type": "selector",
       "outbounds": [
         "🪜proxy",
-        "🎯direct",
         "🇨🇳tw",
         "🇨🇳tw-auto",
         "🇭🇰hk",
@@ -219,7 +218,6 @@
       "type": "selector",
       "outbounds": [
         "🪜proxy",
-        "🎯direct",
         "🇨🇳tw",
         "🇨🇳tw-auto",
         "🇭🇰hk",
@@ -308,7 +306,6 @@
       "type": "selector",
       "outbounds": [
         "🪜proxy",
-        "🎯direct",
         "🇨🇳tw",
         "🇨🇳tw-auto",
         "🇭🇰hk",
