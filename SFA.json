@@ -491,6 +491,10 @@
   "route": {
     "rules": [
       {
+        "inbound": "tun-in",
+        "action": "sniff"
+      },
+      {
         "protocol": "dns",
         "action": "hijack-dns"
       },
@@ -501,6 +505,27 @@
       {
         "clash_mode": "Direct",
         "outbound": "🎯direct"
+      },
+      {
+        "type": "logical",
+        "mode": "or",
+        "rules": [
+          {
+            "port": 853
+          },
+          {
+            "network": "udp",
+            "port": 443
+          },
+          {
+            "protocol": [
+              "quic",
+              "stun",
+              "dtls"
+            ]
+          }
+        ],
+        "action": "reject"
       },
       {
         "rule_set": [
