@@ -107,7 +107,6 @@
       "tag": "mixed-in",
       "listen": "127.0.0.1",
       "listen_port": 9999,
-      "sniff": true,
       "tcp_fast_open": true,
       "tcp_multi_path": true,
       "udp_fragment": true
@@ -148,10 +147,6 @@
     {
       "tag": "🎯direct",
       "type": "direct"
-    },
-    {
-      "tag": "🛑block",
-      "type": "block"
     },
     {
       "tag": "dns-out",
@@ -536,7 +531,7 @@
       },
       {
         "rule_set": "geosite-category-ads-all",
-        "outbound": "🛑block"
+        "action": "reject"
       },
       {
         "type": "logical",
@@ -553,7 +548,7 @@
             "protocol": "stun"
           }
         ],
-        "outbound": "🛑block"
+        "action": "reject"
       },
       {
         "rule_set": [
