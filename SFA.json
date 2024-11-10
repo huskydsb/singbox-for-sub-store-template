@@ -91,6 +91,7 @@
       }
     ],
     "final": "remote_dns",
+    "action": "route-options",
     "strategy": "prefer_ipv4",
     "disable_cache": true,
     "disable_expire": true,
@@ -569,7 +570,9 @@
       },
       {
         "rule_set": "geosite-category-ads-all",
-        "action": "reject"
+        "action": "reject",
+        "method": "default",
+        "no_drop": false
       },
       {
         "type": "logical",
