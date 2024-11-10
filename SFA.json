@@ -91,7 +91,6 @@
       }
     ],
     "final": "remote_dns",
-    "strategy": "prefer_ipv4",
     "disable_cache": true,
     "disable_expire": true,
     "independent_cache": false,
