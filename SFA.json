@@ -117,17 +117,11 @@
     },
     {
       "type": "mixed",
-      "tag": "mixed-in",
-      "listen": "127.0.0.1",
-      "listen_port": 9999,
-      "tcp_fast_open": true,
-      "tcp_multi_path": true,
-      "udp_fragment": true
+      "tag": "mixed-in"
     },
     {
       "type": "tun",
       "tag": "tun-in",
-      "interface_name": "singbox",
       "address": [
         "172.19.0.1/30",
         "fdfe:dcba:9876::1/126"
@@ -159,6 +153,10 @@
     {
       "tag": "🎯direct",
       "type": "direct"
+    },
+    {
+      "tag": "dns",
+      "type": "dns"
     },
     {
       "tag": "🪜proxy",
@@ -485,9 +483,27 @@
   ],
   "route": {
     "rules": [
+       {
+        "action": "route-options",
+        "override_address": "1.1.1.1",
+        "override_port": 443
+      },
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
       {
         "inbound": "tun-in",
-        "action": "sniff"
+        "action": "sniff",
+        "timeout": "1s"
+      },
+      {
+        "inbound": "mixed-in",
+        "action": "resolve",
+        "strategy": "prefer_ipv4"
       },
       {
         "protocol": "dns",
